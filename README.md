@@ -38,9 +38,7 @@ And add an entry to your hosts file for "simple-cms.lo"
 If you are running Symfony2 for the first time, run http://simple-cms.lo/config.php to ensure your
 system settings have been setup inline with the expected behaviour of the Symfony2 framework.
 
-Note however that "Configure your Symfony Application online" is not supported.
-
-Then point your browser to http://simple-cms.lo/app_dev.php or http://simple-cms.lo/app.php
+Then point your browser to http://simple-cms.lo/app_dev.php or http://simple-cms.lo
 
 Functional tests are written with PHPUnit. Note that Bundles and Components are tested independently.
 
