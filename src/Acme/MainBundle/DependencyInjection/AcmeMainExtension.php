@@ -1,12 +1,11 @@
 <?php
+
 namespace Acme\MainBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-//TODO: make config xml instead of yml
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\Config\FileLocator;
-
 
 class AcmeMainExtension extends Extension
 {

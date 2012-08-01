@@ -3,28 +3,20 @@
 namespace Acme\MainBundle\DataFixtures\PHPCR;
 
 use Doctrine\Common\DataFixtures\FixtureInterface;
-use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
-use PHPCR\SessionInterface;
-
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\Page;
 
-class LoadSimpleCmsData implements FixtureInterface, OrderedFixtureInterface, ContainerAwareInterface
+class LoadSimpleCmsData implements FixtureInterface, ContainerAwareInterface
 {
     protected $container;
 
     public function setContainer(ContainerInterface $container = null)
     {
         $this->container = $container;
-    }
-
-    public function getOrder()
-    {
-        return 50;
     }
 
     public function load(ObjectManager $manager)
@@ -39,13 +31,10 @@ class LoadSimpleCmsData implements FixtureInterface, OrderedFixtureInterface, Co
 
         if ('' === $basepath) {
             $basepath = '/';
-        } else {
-            if ($session->nodeExists($basepath)) {
-                $session->removeItem($basepath);
-            }
+        } else if ($session->nodeExists($basepath)) {
+            $session->removeItem($basepath);
         }
 
-        $base = $this->createPath($session, $basepath);
         $base = $manager->find(null, $basepath);
 
         $root = $this->createPage($manager, $base, $rootname, 'homepage', 'Welcome to the CMF Standard Edition', 'This is should get you started with the Symfony CMF.');
@@ -60,7 +49,7 @@ class LoadSimpleCmsData implements FixtureInterface, OrderedFixtureInterface, Co
     /**
      * @return Page instance with the specified information
      */
-    protected function createPage($manager, $parent, $name, $label, $title, $body)
+    protected function createPage(ObjectManager $manager, $parent, $name, $label, $title, $body)
     {
         $page = new Page();
         $page->setPosition($parent, $name);
@@ -71,30 +60,5 @@ class LoadSimpleCmsData implements FixtureInterface, OrderedFixtureInterface, Co
         $manager->persist($page); // do persist before binding translation
 
         return $page;
-    }
-
-    /**
-     * Create a node and it's parents, if necessary.  Like mkdir -p.
-     *
-     * TODO: clean this up once the id generator stuff is done as intended
-     *
-     * @param SessionInterface $session
-     * @param string $path  full path, like /cms/navigation/main
-     * @return \PHPCR\NodeInterface the (now for sure existing) node at path
-     */
-    public function createPath(SessionInterface $session, $path)
-    {
-        $current = $session->getRootNode();
-
-        $segments = preg_split('#/#', $path, null, PREG_SPLIT_NO_EMPTY);
-        foreach ($segments as $segment) {
-            if ($current->hasNode($segment)) {
-                $current = $current->getNode($segment);
-            } else {
-                $current = $current->addNode($segment);
-            }
-        }
-
-        return $current;
     }
 }
