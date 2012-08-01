@@ -5,7 +5,6 @@ php:
   - 5.4
 
 before_script:
-  - cp app/config/parameters.yml.dist app/config/parameters.yml
   - composer install
   - mysql -e 'create database IF NOT EXISTS standard;' -u root
   - php app/console doctrine:database:create -e=test
