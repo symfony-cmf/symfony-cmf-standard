@@ -5,6 +5,9 @@ web/css/
 app/cache/*
 app/logs/*
 vendor/
-app/config/parameters.yml
 app/bootstrap.php.cache
 app/app.sqlite
+
+/web/config.php
+/app/SymfonyRequirements.php
+/app/check.php

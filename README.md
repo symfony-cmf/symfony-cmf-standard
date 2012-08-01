@@ -1,4 +1,4 @@
-# Symfony Content Management Framework Standard Edition
+# Symfony CMF Standard Edition
 
 ### You will need:
   * Git 1.6+
@@ -9,12 +9,8 @@
 
 ## Get the code
 
-    git clone git://github.com/symfony-cmf/symfony-cmf-standard.git
-    cd symfony-cmf-standard
-    # copy parameters template and edit as needed
-    cp app/config/parameters.yml.dist app/config/parameters.yml
     curl -s http://getcomposer.org/installer | php --
-    php composer.phar install
+    php composer.phar create-project symfony-cmf/standard-edition path/to/install
 
 This will fetch the main project and all it's dependencies.
 
