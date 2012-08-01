@@ -6,12 +6,8 @@ framework:
     translator:      { fallback: en }
     secret:          %secret%
     router:          { resource: "%kernel.root_dir%/config/routing.yml" }
-    form:            true
-    csrf_protection: true
-    validation:      { enable_annotations: true }
     templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
     default_locale:  %locale%
-    session:         ~
 
 # Twig Configuration
 twig:
@@ -37,22 +33,6 @@ doctrine_phpcr:
     odm:
         auto_mapping: true
         auto_generate_proxy_classes: %kernel.debug%
-        locales:
-            en:
-                - en
-                - de
-                - fr
-            de:
-                - de
-                - en
-                - fr
-            fr:
-                - fr
-                - en
-                - de
-
-
-symfony_cmf_content: ~
 
 symfony_cmf_routing_extra:
     chain:

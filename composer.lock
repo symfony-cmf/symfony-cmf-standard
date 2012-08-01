@@ -1,5 +1,5 @@
 {
-    "hash": "92a923f0bad850af510b155cd6ba3d45",
+    "hash": "0a32d3921594420388af21715b3c9442",
     "packages": [
         {
             "package": "doctrine/common",
@@ -94,6 +94,12 @@
         {
             "package": "knplabs/knp-menu-bundle",
             "version": "v1.1.0"
+        },
+        {
+            "package": "liip/functional-test-bundle",
+            "version": "dev-master",
+            "source-reference": "0b9ae009973ddc9aac98db077f4528bdf56eff61",
+            "commit-date": "1342615174"
         },
         {
             "package": "monolog/monolog",
@@ -309,6 +315,7 @@
         "sensio/distribution-bundle": 20,
         "jackalope/jackalope-doctrine-dbal": 20,
         "doctrine/doctrine-bundle": 20,
-        "doctrine/doctrine-fixtures-bundle": 20
+        "doctrine/doctrine-fixtures-bundle": 20,
+        "liip/functional-test-bundle": 20
     }
 }

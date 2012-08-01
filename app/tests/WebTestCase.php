@@ -17,7 +17,7 @@ abstract class WebTestCase extends BaseWebTestCase
         }
 
         $this->loadFixtures(array(
-            'Sandbox\MainBundle\DataFixtures\PHPCR\LoadSimpleCmsData',
+            'Acme\MainBundle\DataFixtures\PHPCR\LoadSimpleCmsData',
         ), null, 'doctrine_phpcr');
 
         self::$fixturesLoaded = true;
