@@ -1,0 +1,10 @@
+composer.phar
+web/bundles/
+web/js/
+web/css/
+app/cache/*
+app/logs/*
+vendor/
+app/config/parameters.yml
+app/bootstrap.php.cache
+app/app.sqlite

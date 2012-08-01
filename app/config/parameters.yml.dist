@@ -1,0 +1,21 @@
+parameters:
+    locale: en
+
+    secret: ThisTokenIsNotSoSecretChangeIt
+
+    liip_vie.use_coffee: false
+    # a little hack to avoid errors on missing node/coffescript.
+    # remove -disabled if you want coffee.
+    coffee.extension: "\.coffee-disabled$"
+    coffee.bin: ''
+    coffee.node: ''
+
+    database_driver: pdo_sqlite
+    database_path: %kernel.root_dir%/app.sqlite
+
+    phpcr_backend:
+        type: doctrinedbal
+        connection: doctrine.dbal.default_connection
+    phpcr_workspace: default
+    phpcr_user: admin
+    phpcr_pass: admin

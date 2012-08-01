@@ -1,0 +1,75 @@
+imports:
+    - { resource: parameters.yml }
+
+framework:
+    #esi:             ~
+    translator:      { fallback: en }
+    secret:          %secret%
+    router:          { resource: "%kernel.root_dir%/config/routing.yml" }
+    form:            true
+    csrf_protection: true
+    validation:      { enable_annotations: true }
+    templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
+    default_locale:  %locale%
+    session:         ~
+
+# Twig Configuration
+twig:
+    debug:            %kernel.debug%
+    strict_variables: %kernel.debug%
+
+# for jackalope-doctrine-dbal
+doctrine:
+    dbal:
+        driver:   %database_driver%
+        path:     %database_path%
+        charset:  UTF8
+
+# cmf configuration
+doctrine_phpcr:
+    # configure the PHPCR session
+    session:
+        backend: %phpcr_backend%
+        workspace: %phpcr_workspace%
+        username: %phpcr_user%
+        password: %phpcr_pass%
+    # enable the ODM layer
+    odm:
+        auto_mapping: true
+        auto_generate_proxy_classes: %kernel.debug%
+        locales:
+            en:
+                - en
+                - de
+                - fr
+            de:
+                - de
+                - en
+                - fr
+            fr:
+                - fr
+                - en
+                - de
+
+
+symfony_cmf_content: ~
+
+symfony_cmf_routing_extra:
+    chain:
+        routers_by_id:
+            symfony_cmf_routing_extra.dynamic_router: 20
+            router.default: 100
+    dynamic:
+        enabled: true
+
+symfony_cmf_simple_cms:
+    routing:
+        templates_by_class:
+            Symfony\Cmf\Bundle\SimpleCmsBundle\Document\Page:  SymfonyCmfSimpleCmsBundle:Page:index.html.twig
+    use_sonata_admin: false
+
+knp_menu:
+    twig: true
+
+symfony_cmf_menu:
+    use_sonata_admin: false

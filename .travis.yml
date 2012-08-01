@@ -1,0 +1,20 @@
+language: php
+
+php:
+  - 5.3
+  - 5.4
+
+before_script:
+  - cp app/config/parameters.yml.dist app/config/parameters.yml
+  - composer install
+  - mysql -e 'create database IF NOT EXISTS standard;' -u root
+  - php app/console doctrine:database:create -e=test
+  - php app/console doctrine:phpcr:init:dbal -e=test
+  - app/console doctrine:phpcr:register-system-node-types -e=test
+  - app/console doctrine:phpcr:workspace:create standard_test
+
+script: phpunit -c app
+
+notifications:
+  irc: "irc.freenode.org#symfony-cmf"
+  email: "symfony-cmf-devs@googlegroups.com"
