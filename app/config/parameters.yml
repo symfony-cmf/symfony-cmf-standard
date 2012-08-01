@@ -1,14 +1,14 @@
 parameters:
     locale: en
-
-    secret: ThisTokenIsNotSoSecretChangeIt
-
+    secret: f4789c8038e5423a02f564f80fed455e708b3c77
     database_driver: pdo_sqlite
-    database_path: %kernel.root_dir%/app.sqlite
-
-    phpcr_backend:
-        type: doctrinedbal
-        connection: doctrine.dbal.default_connection
+    database_path: '%kernel.root_dir%/app.sqlite'
+    phpcr_backend: { type: doctrinedbal, connection: doctrine.dbal.default_connection }
     phpcr_workspace: default
     phpcr_user: admin
     phpcr_pass: admin
+    database_host: null
+    database_port: null
+    database_name: null
+    database_user: null
+    database_password: null

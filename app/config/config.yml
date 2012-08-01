@@ -6,6 +6,7 @@ framework:
     translator:      { fallback: en }
     secret:          %secret%
     router:          { resource: "%kernel.root_dir%/config/routing.yml" }
+    form:            true
     templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
     default_locale:  %locale%
 
