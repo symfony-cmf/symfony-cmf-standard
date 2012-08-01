@@ -1,4 +1,4 @@
-# Symfony Content Management Framework Standard Editiong
+# Symfony Content Management Framework Standard Edition
 
 ### You will need:
   * Git 1.6+
