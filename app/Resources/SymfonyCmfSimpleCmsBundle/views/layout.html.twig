@@ -15,15 +15,12 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     {% endblock %}
-
-    {% block top_scripts %}
-    {% endblock %}
 </head>
 <body>
 <div class="container">
 
     <div id="top" class="row">
-        <div id="banner" class="span12">
+        <div class="span12">
             <ul id="skiplinks" class="pull-left hidden-desktop">
                 <li><a href="#content" title="Go to main content">Skip to content</a></li>
                 <li><a href="#navigation" title="go to navigation">Skip to navigation</a></li>
@@ -33,13 +30,10 @@
 
     <div class="row">
         <div id="banner" class="span12">
-            <a href="https://github.com/symfony-cmf/symfony-cmf-standard"><img
-                    style="position: absolute; top: 0; right: 0; border: 0;"
-                    src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
-                    alt="Fork me on GitHub"/></a>
+            <a href="https://github.com/symfony-cmf/symfony-cmf-standard"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"/></a>
 
             <div class="hero-unit">
-                <h1 id="logo-text"><a href="{{ asset('') }}">Simple CMS</a></h1>
+                <h1 id="logo-text"><a href="{{ asset('') }}">Standard Edition</a></h1>
 
                 <p id="slogan">Symfony2 Content Management Framework</p>
             </div>
@@ -52,8 +46,8 @@
                 <div id="navigation" class="span3">
                     <div class="well">
                         {% block navigation %}
-                        <h2>Navigation</h2>
-                        {{ knp_menu_render('simple') }}
+                            <h2>Navigation</h2>
+                            {{ knp_menu_render('simple') }}
                         {% endblock %}
                     </div>
                 </div>
