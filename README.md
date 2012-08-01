@@ -16,8 +16,7 @@
     curl -s http://getcomposer.org/installer | php --
     php composer.phar install
 
-This will fetch the main project and all it's dependencies ( CMF Bundles, Symfony, Doctrine\PHPCR, Jackalope ... )
-Please also adjust the ``app/config/parameters.yml`` as needed.
+This will fetch the main project and all it's dependencies.
 
 The next step is to setup the database:
 
@@ -29,22 +28,23 @@ The next step is to setup the database:
 ## Access by web browser
 
 Create an apache virtual host entry along the lines of
-<Virtualhost *:80>
-    Servername simple-cms.lo
-    DocumentRoot /path/to/symfony-cmf/symfony-cmf-standard/web
-    <Directory /path/to/symfony-cmf/symfony-cmf-standard>
-        AllowOverride All
-    </Directory>
-</Virtualhost>
 
-And add an entry to your hosts file for simple-cms.lo
+    <Virtualhost *:80>
+        Servername simple-cms.lo
+        DocumentRoot /path/to/symfony-cmf/symfony-cmf-standard/web
+        <Directory /path/to/symfony-cmf/symfony-cmf-standard>
+            AllowOverride All
+        </Directory>
+    </Virtualhost>
 
-If you are running Symfony2 for the first time, run http://simple-cms.lo/config.php to ensure your system settings have been
-setup inline with the expected behaviour of the Symfony2 framework.
+And add an entry to your hosts file for "simple-cms.lo"
+
+If you are running Symfony2 for the first time, run http://simple-cms.lo/config.php to ensure your
+system settings have been setup inline with the expected behaviour of the Symfony2 framework.
 
 Note however that "Configure your Symfony Application online" is not supported.
 
-Then point your browser to http://simple-cms.lo/app_dev.php
+Then point your browser to http://simple-cms.lo/app_dev.php or http://simple-cms.lo/app.php
 
 Functional tests are written with PHPUnit. Note that Bundles and Components are tested independently.
 
