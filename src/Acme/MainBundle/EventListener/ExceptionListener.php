@@ -1,6 +1,6 @@
 <?php
 
-namespace Acme\MainBundle\Listener;
+namespace Acme\MainBundle\EventListener;
 
 use PHPCR\RepositoryException;
 
@@ -15,7 +15,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
  * Exception listener that will handle not found exceptions and try to give the
  * first time installer some clues what is wrong.
  */
-class AcmeExceptionListener extends ContainerAware implements EventSubscriberInterface
+class ExceptionListener extends ContainerAware implements EventSubscriberInterface
 {
     public function onKernelException(GetResponseForExceptionEvent $event)
     {
