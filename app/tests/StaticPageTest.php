@@ -24,7 +24,8 @@ class StaticPageTest extends WebTestCase
             array('/', 'Welcome to the CMF Standard Edition'),
             array('/about', 'Some information about us'),
             array('/contact', 'A contact page'),
-            array('/contact/map', 'A map page'),
+            array('/contact/map', 'A map of a location in the US'),
+            array('/contact/map?_locale=de', 'Eine Karte von einem Ort in Deutschland'),
             array('/contact/team', 'A team page'),
         );
     }
