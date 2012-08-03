@@ -11,12 +11,13 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\ContainerAware;
 
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\Page;
+use Acme\MainBundle\Document\MultilangPage;
 
 class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
 {
-    public function load(ObjectManager $manager)
+    public function load(ObjectManager $dm)
     {
-        $session = $manager->getPhpcrSession();
+        $session = $dm->getPhpcrSession();
 
         $basepath = explode('/', $this->container->getParameter('symfony_cmf_simple_cms.basepath'));
         $rootname = array_pop($basepath);
@@ -27,29 +28,34 @@ class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
         }
 
         NodeHelper::createPath($session, $basepath);
-        $base = $manager->find(null, $basepath);
+        $base = $dm->find(null, $basepath);
 
-        $root = $this->createPage($manager, $base, $rootname, 'homepage', 'Welcome to the CMF Standard Edition', 'This is should get you started with the Symfony CMF.');
-        $this->createPage($manager, $root, 'about', 'About us', 'Some information about us', 'The about us page with some content');
-        $contact = $this->createPage($manager, $root, 'contact', 'Contact', 'A contact page', 'Please send an email to symfony-cmf-devs@groups.google.com');
-        $this->createPage($manager, $contact, 'map', 'Map', 'A map page', 'Have a look at the map to find us.');
-        $this->createPage($manager, $contact, 'team', 'Team', 'A team page', 'Our team consists of C, M and F.');
+        $root = $this->createPage($dm, $base, $rootname, 'Homepage', array('en' => array('Welcome to the CMF Standard Edition', 'This is should get you started with the Symfony CMF.'), 'de' => array('Willkommen zur CMF Standard Edition', 'Dies sollte Ihnen einen Einstieg in das Symfon CMF bieten.')));
+        $this->createPage($dm, $root, 'about', 'About us', array('' => array('Some information about us', 'The about us page with some content')));
+        $contact = $this->createPage($dm, $root, 'contact', 'Contact', array('' => array('A contact page', 'Please send an email to symfony-cmf-devs@groups.google.com')));
+        $this->createPage($dm, $contact, 'map', 'Map', array('en' => array('A map of a location in the US', 'Have a look at the map to find us.'), 'de' => array('Eine Karte von einem Ort in Deutschland', 'Hier können Sie uns finden.')));
+        $this->createPage($dm, $contact, 'team', 'Team', array('' => array('A team page', 'Our team consists of C, M and F.')));
 
-        $manager->flush();
+        $dm->flush();
     }
 
     /**
      * @return Page instance with the specified information
      */
-    protected function createPage(ObjectManager $manager, $parent, $name, $label, $title, $body)
+    protected function createPage(ObjectManager $dm, $parent, $name, $label, array $content)
     {
-        $page = new Page();
+        $page = key($content) ? new MultilangPage() : new Page();
         $page->setPosition($parent, $name);
         $page->setLabel($label);
-        $page->setTitle($title);
-        $page->setBody($body);
 
-        $manager->persist($page);
+        $dm->persist($page);
+        foreach ($content as $locale => $data) {
+            $page->setTitle($data[0]);
+            $page->setBody($data[1]);
+            if ($locale) {
+                $dm->bindTranslation($page, $locale);
+            }
+        }
 
         return $page;
     }

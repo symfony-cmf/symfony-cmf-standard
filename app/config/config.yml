@@ -9,6 +9,7 @@ framework:
     form:            true
     templating:      { engines: ['twig'] } #assets_version: SomeVersionScheme
     default_locale:  %locale%
+    session:         ~
 
 # Twig Configuration
 twig:
@@ -34,6 +35,13 @@ doctrine_phpcr:
     odm:
         auto_mapping: true
         auto_generate_proxy_classes: %kernel.debug%
+        locales:
+            en:
+                - en
+                - de
+            de:
+                - de
+                - en
 
 symfony_cmf_routing_extra:
     dynamic:
