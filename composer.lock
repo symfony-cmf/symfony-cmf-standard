@@ -4,8 +4,8 @@
         {
             "package": "doctrine/common",
             "version": "2.3.x-dev",
-            "source-reference": "2fccdb2a4dee54e620793f3e4294ffd8f0eea68d",
-            "commit-date": "1343765518"
+            "source-reference": "2ec4bc6db13db6a0976a16b71058083c55cbcdbd",
+            "commit-date": "1343847076"
         },
         {
             "package": "doctrine/data-fixtures",
@@ -46,8 +46,8 @@
         {
             "package": "doctrine/phpcr-bundle",
             "version": "dev-master",
-            "source-reference": "3131c2df3634a197069bb5d576080c650644154a",
-            "commit-date": "1343062762"
+            "source-reference": "5df402c77ec90df8bc49147d667b73bd87f54a86",
+            "commit-date": "1343981655"
         },
         {
             "package": "doctrine/phpcr-odm",
@@ -120,8 +120,8 @@
         {
             "package": "sensio/distribution-bundle",
             "version": "dev-master",
-            "source-reference": "5886adae1613c0a72fbb95259a83ae798e86c0d3",
-            "commit-date": "1342347850"
+            "source-reference": "26a1165b8cfbde91bf01d809f87bc286f18f0963",
+            "commit-date": "1343979103"
         },
         {
             "package": "sonata-project/block-bundle",
@@ -282,8 +282,8 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "b1618d210cb7e27036edcea9c163a94167e7df59",
-            "commit-date": "1343747192"
+            "source-reference": "6f32078b1a59f12777eaff89da8c370bc966123e",
+            "commit-date": "1343978940"
         },
         {
             "package": "twig/extensions",
