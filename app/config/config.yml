@@ -36,10 +36,6 @@ doctrine_phpcr:
         auto_generate_proxy_classes: %kernel.debug%
 
 symfony_cmf_routing_extra:
-    chain:
-        routers_by_id:
-            symfony_cmf_routing_extra.dynamic_router: 20
-            router.default: 100
     dynamic:
         enabled: true
 
