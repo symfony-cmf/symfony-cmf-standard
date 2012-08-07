@@ -5,8 +5,3 @@ services:
             - [ setContainer, [@service_container] ]
         tags:
             - {name: "kernel.event_subscriber"}
-
-    acme_main.locale_listener:
-        class: Acme\MainBundle\EventListener\LocaleListener
-        tags:
-            - {name: "kernel.event_subscriber"}
