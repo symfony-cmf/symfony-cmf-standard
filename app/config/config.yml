@@ -61,10 +61,10 @@ symfony_cmf_menu:
     menu_basepath: /cms
 
 lunetics_locale:
-  guessing_order:
-    - cookie
-    - router
-    - browser
-  allowed_locales:
-    - en
-    - de
+    guessing_order:
+        - cookie
+        - router
+        - browser
+    allowed_locales:
+        - en
+        - de
