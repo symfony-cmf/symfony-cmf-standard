@@ -29,7 +29,7 @@
         <div id="language_selector" class="pull-right">
             {% block language_selector %}
                 {% if page is defined %}
-                    {% render "symfony_cmf_multilang_content.languageSelectorController:languagesAction" with {"id" : page.path, "languageUrls": languageUrls|default(false) } %}
+                    {{ locale_switcher('', {content: page}) }}
                 {% endif %}
             {% endblock %}
         </div>
