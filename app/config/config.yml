@@ -53,7 +53,6 @@ symfony_cmf_simple_cms:
             Symfony\Cmf\Bundle\SimpleCmsBundle\Document\Page:  SymfonyCmfSimpleCmsBundle:Page:index.html.twig
         multilang:
             locales: [en, de]
-#            default_locale: en
     use_sonata_admin: false
 
 knp_menu:
