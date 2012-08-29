@@ -11,7 +11,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\DependencyInjection\ContainerAware;
 
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\Page;
-use Acme\MainBundle\Document\MultilangPage;
+use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\MultilangPage;
 
 class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
 {
@@ -44,7 +44,7 @@ class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
      */
     protected function createPage(ObjectManager $dm, $parent, $name, $label, array $content)
     {
-        $page = key($content) ? new MultilangPage() : new Page();
+        $page = new MultilangPage();
         $page->setPosition($parent, $name);
         $page->setLabel($label);
 
