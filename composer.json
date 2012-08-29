@@ -15,7 +15,8 @@
         "jackalope/jackalope-doctrine-dbal":"dev-master",
         "doctrine/doctrine-bundle": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "dev-master",
-        "liip/functional-test-bundle": "dev-master"
+        "liip/functional-test-bundle": "dev-master",
+        "lunetics/locale-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

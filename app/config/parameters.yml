@@ -1,6 +1,7 @@
 parameters:
     locale: en
-    secret: f4789c8038e5423a02f564f80fed455e708b3c77
+    locales: [en, de]
+    secret: 10784a86848b5412b5f7fa644e90ef24e
     database_driver: pdo_sqlite
     database_path: '%kernel.root_dir%/app.sqlite'
     phpcr_backend: { type: doctrinedbal, connection: doctrine.dbal.default_connection }

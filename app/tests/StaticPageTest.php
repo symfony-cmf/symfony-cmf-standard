@@ -4,6 +4,19 @@ namespace Sandbox;
 
 class StaticPageTest extends WebTestCase
 {
+    public function testRedirectToHomepage()
+    {
+        $client = $this->createClient();
+
+        $client->request('GET', '/');
+
+        $this->assertEquals(301, $client->getResponse()->getStatusCode());
+
+        $client->followRedirect();
+
+        $this->assertEquals('http://localhost/en', $client->getRequest()->getUri());
+    }
+
     /**
      * @dataProvider contentDataProvider
      */
@@ -21,12 +34,12 @@ class StaticPageTest extends WebTestCase
     public function contentDataProvider()
     {
         return array(
-            array('/', 'Welcome to the CMF Standard Edition'),
-            array('/about', 'Some information about us'),
-            array('/contact', 'A contact page'),
-            array('/contact/map', 'A map of a location in the US'),
-            array('/contact/map?_locale=de', 'Eine Karte von einem Ort in Deutschland'),
-            array('/contact/team', 'A team page'),
+            array('/en', 'Welcome to the CMF Standard Edition'),
+            array('/en/about', 'Some information about us'),
+            array('/en/contact', 'A contact page'),
+            array('/en/contact/map', 'A map of a location in the US'),
+            array('/de/contact/map', 'Eine Karte von einem Ort in Deutschland'),
+            array('/en/contact/team', 'A team page'),
         );
     }
 }

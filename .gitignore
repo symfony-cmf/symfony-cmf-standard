@@ -8,6 +8,6 @@ vendor/
 app/bootstrap.php.cache
 app/app.sqlite
 
-/web/config.php
-/app/SymfonyRequirements.php
-/app/check.php
+web/config.php
+app/SymfonyRequirements.php
+app/check.php
