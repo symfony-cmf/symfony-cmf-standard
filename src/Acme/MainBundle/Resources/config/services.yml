@@ -1,7 +1,0 @@
-services:
-    acme_main.debugListener:
-        class: Acme\MainBundle\EventListener\ExceptionListener
-        calls:
-            - [ setContainer, [@service_container] ]
-        tags:
-            - {name: "kernel.event_subscriber"}
