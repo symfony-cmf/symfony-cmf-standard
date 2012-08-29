@@ -44,7 +44,6 @@ class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
      */
     protected function createPage(ObjectManager $dm, $parent, $name, $label, array $content)
     {
-        #$page = key($content) ? new MultilangPage() : new Page();
         $page = new MultilangPage();
         $page->setPosition($parent, $name);
         $page->setLabel($label);
