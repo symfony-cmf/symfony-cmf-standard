@@ -4,8 +4,8 @@
         {
             "package": "doctrine/common",
             "version": "2.3.x-dev",
-            "source-reference": "50103d1fde90876a48478f4daa760d9e81448d18",
-            "commit-date": "1346226460"
+            "source-reference": "605b1b8b5a7bc8daf9111fb35483e5708e30de35",
+            "commit-date": "1346249247"
         },
         {
             "package": "doctrine/data-fixtures",
@@ -16,8 +16,8 @@
         {
             "package": "doctrine/dbal",
             "version": "2.3.x-dev",
-            "source-reference": "cc7b52ecbd9012030d4928f454a009524d0d0928",
-            "commit-date": "1346229157"
+            "source-reference": "adb28e4e1f959d515971b8e8b7f05a01913a7b91",
+            "commit-date": "1346249329"
         },
         {
             "package": "doctrine/doctrine-bundle",
@@ -58,8 +58,8 @@
         {
             "package": "doctrine/phpcr-odm",
             "version": "dev-master",
-            "source-reference": "ba2b8153208f6244817e442443b83ac81cd97403",
-            "commit-date": "1346095240"
+            "source-reference": "059f3de507870f6203668144b440c557b14a7bf5",
+            "commit-date": "1346317889"
         },
         {
             "package": "friendsofsymfony/jsrouting-bundle",
@@ -134,12 +134,6 @@
         {
             "package": "sensio/distribution-bundle",
             "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
-        },
-        {
-            "package": "sensio/distribution-bundle",
-            "version": "dev-master",
             "source-reference": "a86d2c0d7212851cc4e971abdff13b89eb063861",
             "commit-date": "1346246961"
         },
@@ -176,8 +170,8 @@
         {
             "package": "symfony-cmf/content-bundle",
             "version": "dev-master",
-            "source-reference": "0882486f8e702129919d65f2ad120e906d781370",
-            "commit-date": "1344248123"
+            "source-reference": "2da53815ee1da6445aa5f12a3e58433aa70745ad",
+            "commit-date": "1346338787"
         },
         {
             "package": "symfony-cmf/core-bundle",
@@ -224,8 +218,8 @@
         {
             "package": "symfony-cmf/routing",
             "version": "dev-master",
-            "source-reference": "c00d6564c8fc6735b4d9590670c0984699b06cbe",
-            "commit-date": "1346247326"
+            "source-reference": "0f29b583df19e8d794a20fdce810ba907eb63888",
+            "commit-date": "1346338867"
         },
         {
             "package": "symfony-cmf/routing-extra-bundle",
@@ -236,8 +230,8 @@
         {
             "package": "symfony-cmf/routing-extra-bundle",
             "version": "dev-master",
-            "source-reference": "36e212ef4a00478e02e599eb4a9b96dcdf841b0b",
-            "commit-date": "1346248685"
+            "source-reference": "67cc5e405f6a95d0a34b2e9f1807d19dad064113",
+            "commit-date": "1346266547"
         },
         {
             "package": "symfony-cmf/simple-cms-bundle",
@@ -302,8 +296,8 @@
         {
             "package": "symfony/symfony",
             "version": "dev-master",
-            "source-reference": "ecab04c38d36c61375c0691a35042f9f5946c920",
-            "commit-date": "1346248110"
+            "source-reference": "2cf50b78017b805c75f8ba134925e3e71d2fea50",
+            "commit-date": "1346337608"
         },
         {
             "package": "twig/extensions",
@@ -320,8 +314,8 @@
         {
             "package": "twig/twig",
             "version": "dev-master",
-            "source-reference": "300b26cf8eee5645bb3b07e83fd81760ab452768",
-            "commit-date": "1346219047"
+            "source-reference": "f76ed618c890165fd107a9cd4a06c7d73da75b9c",
+            "commit-date": "1346324412"
         }
     ],
     "packages-dev": null,
