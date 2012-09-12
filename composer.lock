@@ -1,5 +1,5 @@
 {
-    "hash": "f97363aff83f47ab45317dd59a973f86",
+    "hash": "0a3464b8597483b7b0d475f06cf4b69e",
     "packages": [
         {
             "package": "doctrine/common",
@@ -28,8 +28,8 @@
         {
             "package": "doctrine/doctrine-bundle",
             "version": "dev-master",
-            "source-reference": "v1.0.0",
-            "commit-date": "1347052701"
+            "source-reference": "d3c930599723c8343472a5791b0f5909a4111a73",
+            "commit-date": "1347289964"
         },
         {
             "package": "doctrine/doctrine-fixtures-bundle",
@@ -46,8 +46,8 @@
         {
             "package": "doctrine/phpcr-bundle",
             "version": "dev-master",
-            "source-reference": "5df402c77ec90df8bc49147d667b73bd87f54a86",
-            "commit-date": "1343981655"
+            "source-reference": "b1d54c4773dbb90bbe2508953e1b62df226f9005",
+            "commit-date": "1347492893"
         },
         {
             "package": "doctrine/phpcr-odm",
@@ -58,14 +58,8 @@
         {
             "package": "doctrine/phpcr-odm",
             "version": "dev-master",
-            "source-reference": "059f3de507870f6203668144b440c557b14a7bf5",
-            "commit-date": "1346317889"
-        },
-        {
-            "package": "friendsofsymfony/jsrouting-bundle",
-            "version": "dev-master",
-            "alias-pretty-version": "1.0.x-dev",
-            "alias-version": "1.0.9999999.9999999-dev"
+            "source-reference": "fa22ffd7552a99982fcc248f41d73d7619bee7e6",
+            "commit-date": "1347430902"
         },
         {
             "package": "friendsofsymfony/jsrouting-bundle",
@@ -82,20 +76,14 @@
         {
             "package": "jackalope/jackalope",
             "version": "dev-master",
-            "source-reference": "24156f3830b5068538865bc63fe1c45d3e41aa86",
-            "commit-date": "1346229661"
+            "source-reference": "f3974f7e678795e4398505ae28416327ad884f1a",
+            "commit-date": "1347451280"
         },
         {
             "package": "jackalope/jackalope-doctrine-dbal",
             "version": "dev-master",
-            "alias-pretty-version": "1.0.x-dev",
-            "alias-version": "1.0.9999999.9999999-dev"
-        },
-        {
-            "package": "jackalope/jackalope-doctrine-dbal",
-            "version": "dev-master",
-            "source-reference": "b1f5642d7d4941fe1e7f856cc3fc6931f6ec8a3c",
-            "commit-date": "1345022826"
+            "source-reference": "4bc27cf54dee7cbd750b87aecc5d251f9ec4fee3",
+            "commit-date": "1347492885"
         },
         {
             "package": "knplabs/knp-menu",
@@ -106,6 +94,12 @@
         {
             "package": "knplabs/knp-menu-bundle",
             "version": "v1.1.0"
+        },
+        {
+            "package": "liip/doctrine-cache-bundle",
+            "version": "dev-master",
+            "source-reference": "b7854695d5b39e599fd9177f560c724e6966537e",
+            "commit-date": "1347373295"
         },
         {
             "package": "liip/functional-test-bundle",
@@ -128,50 +122,26 @@
         {
             "package": "monolog/monolog",
             "version": "dev-master",
-            "source-reference": "e5bf7ba5d1df622b68d004b3c0277bc94286e1b7",
-            "commit-date": "1347105894"
+            "source-reference": "0f3dc95c4a0ed7d17bec237d07af3da6c0c1071a",
+            "commit-date": "1347363321"
         },
         {
             "package": "phpcr/phpcr",
             "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
-        },
-        {
-            "package": "phpcr/phpcr",
-            "version": "dev-master",
-            "source-reference": "c341a9c39e7568989c288a8f5f85cb11a36d93e5",
-            "commit-date": "1343209534"
+            "source-reference": "2.1.0-beta5",
+            "commit-date": "1347448804"
         },
         {
             "package": "phpcr/phpcr-utils",
             "version": "dev-master",
-            "alias-pretty-version": "1.0.x-dev",
-            "alias-version": "1.0.9999999.9999999-dev"
-        },
-        {
-            "package": "phpcr/phpcr-utils",
-            "version": "dev-master",
-            "source-reference": "b15d84ecfc68dddc64af746feb1a7ae9ea38a561",
-            "commit-date": "1346059773"
+            "source-reference": "402b1ea0835c123aea267f35d54ab5c5f4b8bc4c",
+            "commit-date": "1347451158"
         },
         {
             "package": "sensio/distribution-bundle",
-            "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
-        },
-        {
-            "package": "sensio/distribution-bundle",
-            "version": "dev-master",
-            "source-reference": "98921298951598e8707258cba2b6180b96faa91c",
-            "commit-date": "1347023757"
-        },
-        {
-            "package": "sonata-project/admin-bundle",
-            "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
+            "version": "2.1.x-dev",
+            "source-reference": "2eee3cb4cd761c851f0d766649fb9ff6f4c97002",
+            "commit-date": "1347340208"
         },
         {
             "package": "sonata-project/admin-bundle",
@@ -260,8 +230,8 @@
         {
             "package": "symfony-cmf/multilang-content-bundle",
             "version": "dev-master",
-            "source-reference": "105b6de03c76da4987f7974746904f9ada0d719f",
-            "commit-date": "1347280568"
+            "source-reference": "2e8c4cae1246110ea7dc668df93a4f1776b75736",
+            "commit-date": "1347353538"
         },
         {
             "package": "symfony-cmf/routing",
@@ -284,8 +254,8 @@
         {
             "package": "symfony-cmf/routing-extra-bundle",
             "version": "dev-master",
-            "source-reference": "38bc31947687a07917077d68bf71c69f7cb5d81f",
-            "commit-date": "1347280580"
+            "source-reference": "a4ad348c4501f606941dd4a780f6c87e6fd6c462",
+            "commit-date": "1347287850"
         },
         {
             "package": "symfony-cmf/simple-cms-bundle",
@@ -296,8 +266,8 @@
         {
             "package": "symfony-cmf/simple-cms-bundle",
             "version": "dev-master",
-            "source-reference": "ea44e0f070b04671a47f260ebd2b743ad1a21646",
-            "commit-date": "1347280537"
+            "source-reference": "7dbc51e13a644fc62ca2f7d90d6b1e7267562596",
+            "commit-date": "1347288474"
         },
         {
             "package": "symfony-cmf/symfony-cmf",
@@ -320,8 +290,8 @@
         {
             "package": "symfony-cmf/tree-browser-bundle",
             "version": "dev-master",
-            "source-reference": "01cbee84f233cbf41ac09b32e753fe4d1d8b79fa",
-            "commit-date": "1347278963"
+            "source-reference": "a0027eac630562e13b452fa131c1f2441736b942",
+            "commit-date": "1347291394"
         },
         {
             "package": "symfony-cmf/tree-bundle",
@@ -338,26 +308,14 @@
         {
             "package": "symfony/monolog-bundle",
             "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
-        },
-        {
-            "package": "symfony/monolog-bundle",
-            "version": "dev-master",
-            "source-reference": "v2.1.0-RC2",
-            "commit-date": "1345557954"
+            "source-reference": "b7318480e6f8bf5579d6b3cd856850302e7ba8d8",
+            "commit-date": "1347283885"
         },
         {
             "package": "symfony/symfony",
             "version": "2.1.x-dev",
-            "source-reference": "3c32fd993dfb1e07b79acbe4e4bf24f382cd81b3",
-            "commit-date": "1347274422"
-        },
-        {
-            "package": "twig/extensions",
-            "version": "dev-master",
-            "alias-pretty-version": "1.0.x-dev",
-            "alias-version": "1.0.9999999.9999999-dev"
+            "source-reference": "f23fd03732e115fd15ec675c0ada4cba20a035d1",
+            "commit-date": "1347354770"
         },
         {
             "package": "twig/extensions",
@@ -386,11 +344,11 @@
     "stability-flags": {
         "twig/extensions": 20,
         "symfony/monolog-bundle": 20,
-        "sensio/distribution-bundle": 20,
         "jackalope/jackalope-doctrine-dbal": 20,
         "doctrine/doctrine-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
         "liip/functional-test-bundle": 20,
-        "lunetics/locale-bundle": 20
+        "lunetics/locale-bundle": 20,
+        "liip/doctrine-cache-bundle": 20
     }
 }

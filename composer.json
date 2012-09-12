@@ -9,14 +9,15 @@
         "symfony/symfony": "2.1.*",
         "twig/extensions": "dev-master",
         "symfony/monolog-bundle": "dev-master",
-        "sensio/distribution-bundle": "dev-master",
+        "sensio/distribution-bundle": "2.1.*",
         "symfony-cmf/symfony-cmf": "1.0.*",
         "symfony-cmf/simple-cms-bundle": "1.0.*",
         "jackalope/jackalope-doctrine-dbal":"dev-master",
         "doctrine/doctrine-bundle": "dev-master",
         "doctrine/doctrine-fixtures-bundle": "dev-master",
         "liip/functional-test-bundle": "dev-master",
-        "lunetics/locale-bundle": "dev-master"
+        "lunetics/locale-bundle": "dev-master",
+        "liip/doctrine-cache-bundle": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

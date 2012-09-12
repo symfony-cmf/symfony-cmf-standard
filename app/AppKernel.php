@@ -15,6 +15,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
 
             new Doctrine\Bundle\PHPCRBundle\DoctrinePHPCRBundle(),
+            new Liip\DoctrineCacheBundle\LiipDoctrineCacheBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
 

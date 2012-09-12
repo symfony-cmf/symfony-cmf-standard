@@ -43,6 +43,13 @@ doctrine_phpcr:
                 - de
                 - en
 
+liip_doctrine_cache:
+    namespaces:
+        meta:
+            type: file_system
+        nodes:
+            type: file_system
+
 symfony_cmf_routing_extra:
     dynamic:
         enabled: true
