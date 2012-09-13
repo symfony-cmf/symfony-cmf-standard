@@ -98,8 +98,8 @@
         {
             "package": "liip/doctrine-cache-bundle",
             "version": "dev-master",
-            "source-reference": "b7854695d5b39e599fd9177f560c724e6966537e",
-            "commit-date": "1347373295"
+            "source-reference": "4316a26fac90d2134379a8d0e0feea62f9c543cc",
+            "commit-date": "1347494897"
         },
         {
             "package": "liip/functional-test-bundle",
