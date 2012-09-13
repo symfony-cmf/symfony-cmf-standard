@@ -46,8 +46,8 @@
         {
             "package": "doctrine/phpcr-bundle",
             "version": "dev-master",
-            "source-reference": "b1d54c4773dbb90bbe2508953e1b62df226f9005",
-            "commit-date": "1347492893"
+            "source-reference": "52b6c834f89a052b8d1baf3fcbb1e1b1bb27a3b2",
+            "commit-date": "1347545412"
         },
         {
             "package": "doctrine/phpcr-odm",
@@ -58,8 +58,8 @@
         {
             "package": "doctrine/phpcr-odm",
             "version": "dev-master",
-            "source-reference": "fa22ffd7552a99982fcc248f41d73d7619bee7e6",
-            "commit-date": "1347430902"
+            "source-reference": "6eb21890f8e38aa93f371b9d22909accb5c535a8",
+            "commit-date": "1347541733"
         },
         {
             "package": "friendsofsymfony/jsrouting-bundle",
@@ -332,8 +332,8 @@
         {
             "package": "twig/twig",
             "version": "dev-master",
-            "source-reference": "68b8c4619c5bbe82bd345fe56070dec8c356610a",
-            "commit-date": "1347025342"
+            "source-reference": "956a66e6da304ead2aa2632acc01118b360d19d3",
+            "commit-date": "1347542132"
         }
     ],
     "packages-dev": null,
