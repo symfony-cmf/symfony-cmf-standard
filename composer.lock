@@ -58,8 +58,8 @@
         {
             "package": "doctrine/phpcr-odm",
             "version": "dev-master",
-            "source-reference": "6eb21890f8e38aa93f371b9d22909accb5c535a8",
-            "commit-date": "1347541733"
+            "source-reference": "7de78baeb1cdc22e3c61a0131ba51418719100d1",
+            "commit-date": "1347608244"
         },
         {
             "package": "friendsofsymfony/jsrouting-bundle",
@@ -98,8 +98,8 @@
         {
             "package": "liip/doctrine-cache-bundle",
             "version": "dev-master",
-            "source-reference": "4316a26fac90d2134379a8d0e0feea62f9c543cc",
-            "commit-date": "1347494897"
+            "source-reference": "f7c5487c89602d08b95090fb2776f0931d8946a1",
+            "commit-date": "1347620900"
         },
         {
             "package": "liip/functional-test-bundle",
@@ -254,8 +254,8 @@
         {
             "package": "symfony-cmf/routing-extra-bundle",
             "version": "dev-master",
-            "source-reference": "a4ad348c4501f606941dd4a780f6c87e6fd6c462",
-            "commit-date": "1347287850"
+            "source-reference": "1a40e14303e84f3320499f3710cd32f62b2d3ec1",
+            "commit-date": "1347605107"
         },
         {
             "package": "symfony-cmf/simple-cms-bundle",
@@ -278,8 +278,8 @@
         {
             "package": "symfony-cmf/symfony-cmf",
             "version": "dev-master",
-            "source-reference": "13a5ffe8999758d245464f979752ca3ba1b39504",
-            "commit-date": "1339053579"
+            "source-reference": "86080307ac3c4e6a7afc684c9fb4c5ed2b13fd84",
+            "commit-date": "1347620758"
         },
         {
             "package": "symfony-cmf/tree-browser-bundle",

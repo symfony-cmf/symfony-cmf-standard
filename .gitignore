@@ -11,3 +11,5 @@ app/app.sqlite
 web/config.php
 app/SymfonyRequirements.php
 app/check.php
+
+/bin/
