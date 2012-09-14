@@ -674,7 +674,7 @@
                 "knplabs/knp-menu": "1.1.*",
                 "symfony/framework-bundle": ">=2.0,<2.2-dev"
             },
-            "time": "2012-05-16 21:56:49",
+            "time": "2012-05-16 19:56:49",
             "type": "symfony-bundle",
             "installation-source": "dist",
             "autoload": {
@@ -1481,12 +1481,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony-cmf/MenuBundle.git",
-                "reference": "b860d5970d0c400b5fcb1eb3236dd6ad252829af"
+                "reference": "f4068fde7d94a597893e7085cef2b7b0e76a81f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony-cmf/MenuBundle/zipball/b860d5970d0c400b5fcb1eb3236dd6ad252829af",
-                "reference": "b860d5970d0c400b5fcb1eb3236dd6ad252829af",
+                "url": "https://github.com/symfony-cmf/MenuBundle/zipball/f4068fde7d94a597893e7085cef2b7b0e76a81f5",
+                "reference": "f4068fde7d94a597893e7085cef2b7b0e76a81f5",
                 "shasum": ""
             },
             "require": {
@@ -1502,7 +1502,7 @@
             "suggest": {
                 "sonata-project/doctrine-phpcr-admin-bundle": "if you want to have editing capabilities"
             },
-            "time": "1347629112",
+            "time": "1347641148",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
