@@ -9,3 +9,9 @@ home_redirect:
         _controller: FrameworkBundle:Redirect:redirect
         route: cmf_routing_dynamic_route_cms_simple
         permanent: true # this for 301
+
+vie_endpoint:
+    resource: "@SymfonyCmfCreateBundle/Resources/config/routing/phpcr_odm.xml"
+
+asset_search:
+    resource: "@SymfonyCmfCreateBundle/Resources/config/routing/asset_search.xml"

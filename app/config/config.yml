@@ -16,6 +16,22 @@ twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
 
+# Assetic Configuration
+assetic:
+    debug:          %kernel.debug%
+    use_controller: false
+    #bundles:        [SymfonyCmfSimpleCmsBundle, SymfonyCmfCreateBundle]
+    #java: /usr/bin/java
+    filters:
+        cssrewrite: ~
+        #lessphp:
+            #file: %kernel.root_dir%/../vendor/leafo/lessphp/lessc.inc.php
+            #apply_to: "\.less$"
+        #closure:
+        #    jar: %kernel.root_dir%/Resources/java/compiler.jar
+        #yui_css:
+        #    jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar
+
 # for jackalope-doctrine-dbal
 doctrine:
     dbal:
@@ -68,6 +84,11 @@ knp_menu:
 symfony_cmf_menu:
     use_sonata_admin: false
     menu_basepath: /cms
+
+symfony_cmf_create:
+    phpcr_odm: true
+    base_path: /cms/simple
+    cms_path: /cms/simple
 
 lunetics_locale:
     guessing_order:

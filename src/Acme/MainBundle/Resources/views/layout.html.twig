@@ -14,6 +14,8 @@
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
+
+        {% include "SymfonyCmfCreateBundle::includecssfiles.html.twig" %}
     {% endblock %}
 </head>
 <body>
@@ -70,7 +72,7 @@
         </div>
     </div>
 </div>
-
+{% render "symfony_cmf_create.controller.vie:includeJSFilesAction" %}
 </body>
 </html>
 
