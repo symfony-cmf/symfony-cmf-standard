@@ -787,7 +787,7 @@
                 "twig/twig": ">=1.8,<2.0-dev",
                 "doctrine/orm": ">=2.1,<2.4-dev"
             },
-            "time": "2012-09-20 17:23:52",
+            "time": "2012-09-20 13:23:52",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -904,7 +904,7 @@
                 "knplabs/knp-menu": "1.1.*",
                 "symfony/framework-bundle": ">=2.0,<2.2-dev"
             },
-            "time": "2012-05-15 19:56:49",
+            "time": "2012-05-15 15:56:49",
             "type": "symfony-bundle",
             "installation-source": "dist",
             "autoload": {
@@ -1709,12 +1709,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/CreateBundle.git",
-                "reference": "02a7f882e705d531d6102c2561b6eedda9ae10d4"
+                "reference": "8ba6fbb739a9e65fcc5d30dae63f6bce68f894fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony-cmf/CreateBundle/zipball/02a7f882e705d531d6102c2561b6eedda9ae10d4",
-                "reference": "02a7f882e705d531d6102c2561b6eedda9ae10d4",
+                "url": "https://github.com/symfony-cmf/CreateBundle/zipball/8ba6fbb739a9e65fcc5d30dae63f6bce68f894fd",
+                "reference": "8ba6fbb739a9e65fcc5d30dae63f6bce68f894fd",
                 "shasum": ""
             },
             "require": {
@@ -1727,7 +1727,7 @@
             "suggest": {
                 "dms/dms-filter": "if you want to filter content on your fields"
             },
-            "time": "1348505980",
+            "time": "1348511708",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1885,7 +1885,7 @@
                 "symfony/routing": "2.1.*",
                 "symfony/http-kernel": "2.1.*"
             },
-            "time": "1348485995",
+            "time": "1347634254",
             "type": "library",
             "extra": {
                 "branch-alias": {

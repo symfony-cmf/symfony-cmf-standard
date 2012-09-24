@@ -15,16 +15,7 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-        <link rel="stylesheet" href="/bundles/symfonycmfcreate/vendor/create/themes/midgard-tags/tags.css" media="screen" type="text/css"/>
-        <link rel="stylesheet" href="/bundles/symfonycmfcreate/vendor/create/themes/create-ui/css/create-ui.css" media="screen" type="text/css"/>
-        <link rel="stylesheet" href="/bundles/symfonycmfcreate/vendor/create/themes/midgard-notifications/midgardnotif.css" media="screen" type="text/css"/>
-        <link rel="stylesheet" href="/bundles/symfonycmfcreate/vendor/create/examples/font-awesome/css/font-awesome.css" media="screen" type="text/css"/>
-        {% stylesheets
-        '@SymfonyCmfCreateBundle/Resources/public/css/halloLiipStyle.css'
-        '@SymfonyCmfCreateBundle/Resources/public/css/createStyle.css'
-        %}
-            <link rel="stylesheet" href="{{ asset_url }}" media="screen" type="text/css"/>
-        {% endstylesheets %}
+        {% include "SymfonyCmfCreateBundle::includecssfiles.html.twig" %}
     {% endblock %}
 </head>
 <body>
