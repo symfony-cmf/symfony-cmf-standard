@@ -13,5 +13,5 @@ home_redirect:
 cmf_create_rest:
     resource: "@SymfonyCmfCreateBundle/Resources/config/routing/rest.xml"
 
-asset_search:
-    resource: "@SymfonyCmfCreateBundle/Resources/config/routing/asset_search.xml"
+cmf_create_image:
+    resource: "@SymfonyCmfCreateBundle/Resources/config/routing/image.xml"
