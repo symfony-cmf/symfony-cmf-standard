@@ -87,8 +87,6 @@ symfony_cmf_menu:
 
 symfony_cmf_create:
     phpcr_odm: true
-    base_path: /cms/simple
-    cms_path: /cms/simple
 
 lunetics_locale:
     guessing_order:
