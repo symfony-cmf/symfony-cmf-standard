@@ -89,6 +89,7 @@ symfony_cmf_create:
     phpcr_odm: true
 
 lunetics_locale:
+    strict_mode: true
     guessing_order:
         - cookie
         - router
