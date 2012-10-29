@@ -30,8 +30,8 @@
         </div>
         <div id="language_selector" class="pull-right">
             {% block language_selector %}
-                {% if page is defined %}
-                    {{ locale_switcher('', {content: page}) }}
+                {% if cmfMainContent is defined %}
+                    {{ locale_switcher('', {content: cmfMainContent}) }}
                 {% endif %}
             {% endblock %}
         </div>
