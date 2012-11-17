@@ -14,12 +14,17 @@
 
 This will fetch the main project and all it's dependencies.
 
-The next step is to setup the database:
+The next step is to setup the database, if you want to use Sqlite as your database backend just go ahead and run the following:
 
     app/console doctrine:database:create
     app/console doctrine:phpcr:init:dbal
     app/console doctrine:phpcr:register-system-node-types
     app/console doctrine:phpcr:fixtures:load
+
+If you prefer to use another database backend, for example MySQL, run the Symfony configurator (point your browser 
+to /web/config.php) or set your databaseconnection parameters in app/config/parameters.yml. Make sure you leave
+the 'database_path' property at 'null' in order to use another driver than Sqlite. Leaving the field blank in the
+webconfigurator should set it to 'null'.
 
 ## Access by web browser
 
