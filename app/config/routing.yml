@@ -7,7 +7,7 @@ home_redirect:
     pattern: /
     defaults:
         _controller: FrameworkBundle:Redirect:redirect
-        route: cmf_routing_dynamic_route_cms_simple
+        route: /cms/simple
         permanent: true # this for 301
 
 cmf_create_rest:
