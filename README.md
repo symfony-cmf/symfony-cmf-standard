@@ -22,9 +22,9 @@ The next step is to setup the database, if you want to use Sqlite as your databa
     app/console doctrine:phpcr:fixtures:load
 
 If you prefer to use another database backend, for example MySQL, run the Symfony configurator (point your browser 
-to /web/config.php) or set your databaseconnection parameters in app/config/parameters.yml. Make sure you leave
-the 'database_path' property at 'null' in order to use another driver than Sqlite. Leaving the field blank in the
-webconfigurator should set it to 'null'.
+to /web/config.php) or set your database connection parameters in app/config/parameters.yml. Make sure you leave
+the 'database_path' property at 'null' in order to use another driver than SQLite. Leaving the field blank in the
+web-configurator should set it to 'null'.
 
 ## Access by web browser
 
