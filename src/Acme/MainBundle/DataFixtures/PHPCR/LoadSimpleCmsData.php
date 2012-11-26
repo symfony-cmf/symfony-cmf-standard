@@ -30,7 +30,7 @@ class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
         NodeHelper::createPath($session, $basepath);
         $base = $dm->find(null, $basepath);
 
-        $root = $this->createPage($dm, $base, $rootname, 'Homepage', array('en' => array('Welcome to the CMF Standard Edition', 'This is should get you started with the Symfony CMF.'), 'de' => array('Willkommen zur CMF Standard Edition', 'Dies sollte Ihnen einen Einstieg in das Symfon CMF bieten.')));
+        $root = $this->createPage($dm, $base, $rootname, 'Homepage', array('en' => array('Welcome to the CMF Standard Edition', 'This is should get you started with the Symfony CMF.'), 'de' => array('Willkommen zur CMF Standard Edition', 'Dies sollte Ihnen einen Einstieg in das Symfony CMF bieten.')));
         $this->createPage($dm, $root, 'about', 'About us', array('' => array('Some information about us', 'The about us page with some content')));
         $contact = $this->createPage($dm, $root, 'contact', 'Contact', array('' => array('A contact page', 'Please send an email to symfony-cmf-devs@groups.google.com')));
         $this->createPage($dm, $contact, 'map', 'Map', array('en' => array('A map of a location in the US', 'Have a look at the map to find us.'), 'de' => array('Eine Karte von einem Ort in Deutschland', 'Hier können Sie uns finden.')));
