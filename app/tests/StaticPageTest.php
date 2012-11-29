@@ -42,4 +42,22 @@ class StaticPageTest extends WebTestCase
             array('/en/contact/team', 'A team page'),
         );
     }
+
+    public function testMenu()
+    {
+        $client = $this->createClient();
+
+        $crawler = $client->request('GET', '/en/about');
+
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+
+        $this->assertEquals('/en/contact/map', $crawler->selectLink('Map')->attr('href'), 'Page does not contain an a tag pointing to: /en/contact/map');
+        $this->assertEquals('http://cmf.symfony.com', $crawler->selectLink('Website')->attr('href'), 'Page does not contain an a tag pointing to: cmf.symfony.com');
+        $this->assertEquals('http://cmf.liip.ch', $crawler->selectLink('Demo')->attr('href'), 'Page does not contain an a tag pointing to: cmf.symfony.com');
+
+        $crawler = $client->request('GET', '/de/about');
+
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        $this->assertEquals('http://cmf.symfony.com', $crawler->selectLink('Webseite')->attr('href'), 'Page does not contain an a tag pointing to: cmf.symfony.com');
+    }
 }

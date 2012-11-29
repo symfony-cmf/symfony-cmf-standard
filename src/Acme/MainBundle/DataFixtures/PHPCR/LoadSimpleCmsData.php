@@ -12,6 +12,7 @@ use Symfony\Component\DependencyInjection\ContainerAware;
 
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\Page;
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\MultilangPage;
+use Symfony\Cmf\Bundle\MenuBundle\Document\MultilangMenuItem;
 
 class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
 {
@@ -36,6 +37,9 @@ class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
         $this->createPage($dm, $contact, 'map', 'Map', array('en' => array('A map of a location in the US', 'Have a look at the map to find us.'), 'de' => array('Eine Karte von einem Ort in Deutschland', 'Hier können Sie uns finden.')));
         $this->createPage($dm, $contact, 'team', 'Team', array('' => array('A team page', 'Our team consists of C, M and F.')));
 
+        $this->createMenuItem($dm, $root, 'link', 'http://cmf.symfony.com', array('en' => 'Website', 'de' => 'Webseite'));
+        $this->createMenuItem($dm, $root, 'demo', 'http://cmf.liip.ch', array('en' => 'Demo', 'de' => 'Demo'));
+
         $dm->flush();
     }
 
@@ -58,5 +62,25 @@ class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
         }
 
         return $page;
+    }
+
+    /**
+     * @return MenuItem instance with the specified information
+     */
+    protected function createMenuItem(ObjectManager $dm, $parent, $name, $uri, array $content)
+    {
+        $menuItem = new MultilangMenuItem();
+        $menuItem->setPosition($parent, $name);
+        $menuItem->setUri($uri);
+
+        $dm->persist($menuItem);
+        foreach ($content as $locale => $label) {
+            $menuItem->setLabel($label);
+            if ($locale) {
+                $dm->bindTranslation($menuItem, $locale);
+            }
+        }
+
+        return $menuItem;
     }
 }
