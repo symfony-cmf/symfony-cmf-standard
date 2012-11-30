@@ -1,5 +1,7 @@
 {% extends "AcmeMainBundle::layout.html.twig" %}
 
+{% block title %}{{ cmfMainContent.title|striptags }}{% endblock %}
+
 {% block content %}
 
     {% createphp cmfMainContent as="rdf" %}
