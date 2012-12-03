@@ -79,6 +79,8 @@ symfony_cmf_simple_cms:
     routing:
         templates_by_class:
             Symfony\Cmf\Bundle\SimpleCmsBundle\Document\Page:  SymfonyCmfSimpleCmsBundle:Page:index.html.twig
+        controllers_by_class:
+            Symfony\Cmf\Bundle\RoutingExtraBundle\Document\RedirectRoute:  symfony_cmf_routing_extra.redirect_controller:redirectAction
     multilang:
         locales: %locales%
     use_sonata_admin: false

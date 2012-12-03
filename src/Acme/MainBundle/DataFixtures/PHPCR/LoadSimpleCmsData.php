@@ -12,6 +12,8 @@ use Symfony\Component\DependencyInjection\ContainerAware;
 
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\Page;
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\MultilangPage;
+use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\MultilangRoute;
+use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\MultilangRedirectRoute;
 use Symfony\Cmf\Bundle\MenuBundle\Document\MultilangMenuItem;
 
 class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
@@ -38,7 +40,23 @@ class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
         $this->createPage($dm, $contact, 'team', 'Team', array('' => array('A team page', 'Our team consists of C, M and F.')));
 
         $this->createMenuItem($dm, $root, 'link', 'http://cmf.symfony.com', array('en' => 'Website', 'de' => 'Webseite'));
-        $this->createMenuItem($dm, $root, 'demo', 'http://cmf.liip.ch', array('en' => 'Demo', 'de' => 'Demo'));
+
+        $route = new MultilangRedirectRoute();
+        $route->setPosition($root, 'demo');
+        $route->setUri('http://cmf.liip.ch');
+        $dm->persist($route);
+
+        $this->createMenuItem($dm, $root, 'demo_redirect', $route, array('en' => 'Demo', 'de' => 'Demo'));
+
+        $route = new MultilangRoute();
+        $route->setPosition($root, 'dynamic');
+        $route->setDefault('_controller', 'AcmeMainBundle:Demo:dynamic');
+
+        $dm->persist($route);
+
+        $this->createMenuItem($dm, $root, 'hardcoded_dynamic', $route, array('en' => 'Dynamic', 'de' => 'Dynamisch'));
+
+        $this->createMenuItem($dm, $root, 'hardcoded_static', 'static', array('en' => 'Static', 'de' => 'Statisch'));
 
         $dm->flush();
     }
@@ -67,11 +85,15 @@ class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
     /**
      * @return MenuItem instance with the specified information
      */
-    protected function createMenuItem(ObjectManager $dm, $parent, $name, $uri, array $content)
+    protected function createMenuItem(ObjectManager $dm, $parent, $name, $target, array $content)
     {
         $menuItem = new MultilangMenuItem();
         $menuItem->setPosition($parent, $name);
-        $menuItem->setUri($uri);
+        if (is_object($target)) {
+            $menuItem->setRoute($target->getPath());
+        } else {
+            $menuItem->setUri($target);
+        }
 
         $dm->persist($menuItem);
         foreach ($content as $locale => $label) {

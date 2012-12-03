@@ -1,0 +1,12 @@
+{% extends "AcmeMainBundle::layout.html.twig" %}
+
+{% set title = 'A hardcoded title' %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+
+    <h1>{{ title }}</h1>
+
+    This is some hardcoded text on a dynamic route
+
+{% endblock %}
