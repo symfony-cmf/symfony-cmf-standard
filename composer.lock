@@ -302,12 +302,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrinePHPCRBundle",
-                "reference": "ef4c9362f7265e1a87735c6bfb46cb969eeef7ef"
+                "reference": "ca8e4a5c9a4e53b5fd73935f50d890dcbfb83d1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/DoctrinePHPCRBundle/archive/ef4c9362f7265e1a87735c6bfb46cb969eeef7ef.zip",
-                "reference": "ef4c9362f7265e1a87735c6bfb46cb969eeef7ef",
+                "url": "https://github.com/doctrine/DoctrinePHPCRBundle/archive/ca8e4a5c9a4e53b5fd73935f50d890dcbfb83d1a.zip",
+                "reference": "ca8e4a5c9a4e53b5fd73935f50d890dcbfb83d1a",
                 "shasum": ""
             },
             "require": {
@@ -322,7 +322,7 @@
                 "doctrine/data-fixtures": "if you want to use the fixture loading",
                 "doctrine/phpcr-odm": "if you want to use the odm as well. require version 1.0.*"
             },
-            "time": "1354180608",
+            "time": "1354375159",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -363,12 +363,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/phpcr-odm",
-                "reference": "7994737906d24e3c06e4445a0ea8e84339a8cb21"
+                "reference": "4d19a979aa7baabdf7319c3f617b3915435aea54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/phpcr-odm/archive/7994737906d24e3c06e4445a0ea8e84339a8cb21.zip",
-                "reference": "7994737906d24e3c06e4445a0ea8e84339a8cb21",
+                "url": "https://github.com/doctrine/phpcr-odm/archive/4d19a979aa7baabdf7319c3f617b3915435aea54.zip",
+                "reference": "4d19a979aa7baabdf7319c3f617b3915435aea54",
                 "shasum": ""
             },
             "require": {
@@ -386,7 +386,7 @@
                 "midgard/phpcr": ">=1.3",
                 "symfony/yaml": ">=2.0.0,<2.3.0-dev"
             },
-            "time": "1354232400",
+            "time": "1354373655",
             "bin": [
                 "bin/phpcr",
                 "bin/phpcr.php"
@@ -451,7 +451,6 @@
                 "symfony/serializer": ">=2.0,<2.3-dev",
                 "symfony/console": ">=2.0,<2.3-dev"
             },
-            "time": "1354140049",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -482,7 +481,8 @@
             "homepage": "http://friendsofsymfony.github.com",
             "keywords": [
                 "Js Routing"
-            ]
+            ],
+            "time": "1354140049"
         },
         {
             "name": "friendsofsymfony/rest",
@@ -885,7 +885,6 @@
             "suggest": {
                 "symfony/framework-bundle": "2.*"
             },
-            "time": "1353162995",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -917,7 +916,8 @@
                 "serialization",
                 "deserialization",
                 "jaxb"
-            ]
+            ],
+            "time": "1353162995"
         },
         {
             "name": "knplabs/knp-menu",
@@ -1800,7 +1800,6 @@
             "suggest": {
                 "dms/dms-filter": "if you want to filter content on your fields"
             },
-            "time": "1353058633",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1826,7 +1825,8 @@
                     "homepage": "https://github.com/symfony-cmf/CreateBundle/contributors"
                 }
             ],
-            "description": "Symfony Bundle for createphp and create.js. The easiest way to make any site editable and have semantic annotations with RDFa."
+            "description": "Symfony Bundle for createphp and create.js. The easiest way to make any site editable and have semantic annotations with RDFa.",
+            "time": "1353058633"
         },
         {
             "name": "symfony-cmf/menu-bundle",
@@ -1835,12 +1835,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony-cmf/MenuBundle.git",
-                "reference": "a5f063a914d39152cc1a155cb5184003d986698c"
+                "reference": "547c5fc9e954c8a0f6a0cc400f3cbe371895e7a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony-cmf/MenuBundle/archive/a5f063a914d39152cc1a155cb5184003d986698c.zip",
-                "reference": "a5f063a914d39152cc1a155cb5184003d986698c",
+                "url": "https://github.com/symfony-cmf/MenuBundle/archive/547c5fc9e954c8a0f6a0cc400f3cbe371895e7a5.zip",
+                "reference": "547c5fc9e954c8a0f6a0cc400f3cbe371895e7a5",
                 "shasum": ""
             },
             "require": {
@@ -1856,7 +1856,7 @@
             "suggest": {
                 "sonata-project/doctrine-phpcr-admin-bundle": "if you want to have editing capabilities"
             },
-            "time": "1354232292",
+            "time": "1354521200",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2007,12 +2007,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony-cmf/SimpleCmsBundle.git",
-                "reference": "808eba998ca1269c84b406ae0fd2d0198471d157"
+                "reference": "24e28860668ba491e0f38705af532b7a3e83ae58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony-cmf/SimpleCmsBundle/archive/808eba998ca1269c84b406ae0fd2d0198471d157.zip",
-                "reference": "808eba998ca1269c84b406ae0fd2d0198471d157",
+                "url": "https://github.com/symfony-cmf/SimpleCmsBundle/archive/24e28860668ba491e0f38705af532b7a3e83ae58.zip",
+                "reference": "24e28860668ba491e0f38705af532b7a3e83ae58",
                 "shasum": ""
             },
             "require": {
@@ -2028,7 +2028,7 @@
                 "symfony-cmf/create-bundle": "1.0.*",
                 "sonata-project/doctrine-phpcr-admin-bundle": "1.0.*"
             },
-            "time": "1353938108",
+            "time": "1354527646",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2402,7 +2402,6 @@
                 "propel/propel1": "dev-master",
                 "monolog/monolog": "1.*"
             },
-            "time": "1354190179",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2433,7 +2432,8 @@
             "homepage": "http://symfony.com",
             "keywords": [
                 "framework"
-            ]
+            ],
+            "time": "1354190179"
         },
         {
             "name": "twig/extensions",
@@ -2499,7 +2499,6 @@
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1353925549",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2529,7 +2528,8 @@
             "homepage": "http://twig.sensiolabs.org",
             "keywords": [
                 "templating"
-            ]
+            ],
+            "time": "1353925549"
         }
     ],
     "packages-dev": null,
