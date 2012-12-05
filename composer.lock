@@ -18,7 +18,7 @@
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "1348120518",
+            "time": "2012-09-20 05:55:18",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -95,7 +95,7 @@
                 "doctrine/mongodb-odm": "For loading MongoDB ODM fixtures",
                 "doctrine/phpcr-odm": "For loading PHPCR ODM fixtures"
             },
-            "time": "1354528007",
+            "time": "2012-12-03 09:46:47",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -125,19 +125,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal",
-                "reference": "22a30c9cece379eab619727c83e1859288f32f89"
+                "reference": "f63af1948a609a96b8ea1c1302c7cdf2f9f51468"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/dbal/archive/22a30c9cece379eab619727c83e1859288f32f89.zip",
-                "reference": "22a30c9cece379eab619727c83e1859288f32f89",
+                "url": "https://github.com/doctrine/dbal/archive/f63af1948a609a96b8ea1c1302c7cdf2f9f51468.zip",
+                "reference": "f63af1948a609a96b8ea1c1302c7cdf2f9f51468",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "doctrine/common": "2.3.*"
             },
-            "time": "1353866609",
+            "time": "2012-12-04 21:06:56",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -150,6 +150,7 @@
                     "Doctrine\\DBAL": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -212,7 +213,7 @@
             "suggest": {
                 "doctrine/orm": "The Doctrine ORM integration is optional in the bundle."
             },
-            "time": "1353489818",
+            "time": "2012-11-21 09:23:38",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -272,7 +273,7 @@
                 "doctrine/doctrine-bundle": "1.0.*",
                 "symfony/doctrine-bridge": ">=2.1.0,<2.3-dev"
             },
-            "time": "1350914272",
+            "time": "2012-10-22 13:57:52",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -331,7 +332,7 @@
                 "doctrine/data-fixtures": "if you want to use the fixture loading",
                 "doctrine/phpcr-odm": "if you want to use the odm as well. require version 1.0.*"
             },
-            "time": "1354375159",
+            "time": "2012-12-01 15:19:19",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -395,7 +396,7 @@
                 "midgard/phpcr": ">=1.3",
                 "symfony/yaml": ">=2.0.0,<2.3.0-dev"
             },
-            "time": "1354373655",
+            "time": "2012-12-01 14:54:15",
             "bin": [
                 "bin/phpcr",
                 "bin/phpcr.php"
@@ -460,7 +461,7 @@
                 "symfony/serializer": ">=2.0,<2.3-dev",
                 "symfony/console": ">=2.0,<2.3-dev"
             },
-            "time": "1354485453",
+            "time": "2012-12-02 21:57:33",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -512,7 +513,7 @@
                 "php": ">=5.3.2",
                 "symfony/http-foundation": ">=2.0,<2.3-dev"
             },
-            "time": "1347135166",
+            "time": "2012-09-08 20:12:46",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -551,12 +552,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle",
-                "reference": "75a6751d1389dc25f48ab1e8d1e25113e2ee525d"
+                "reference": "fc92b764038d662542c9424aeaf60373bf3b6e32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/FriendsOfSymfony/FOSRestBundle/archive/75a6751d1389dc25f48ab1e8d1e25113e2ee525d.zip",
-                "reference": "75a6751d1389dc25f48ab1e8d1e25113e2ee525d",
+                "url": "https://github.com/FriendsOfSymfony/FOSRestBundle/archive/fc92b764038d662542c9424aeaf60373bf3b6e32.zip",
+                "reference": "fc92b764038d662542c9424aeaf60373bf3b6e32",
                 "shasum": ""
             },
             "require": {
@@ -565,22 +566,22 @@
                 "friendsofsymfony/rest": ">=0.7.0,<0.9.0-dev"
             },
             "require-dev": {
-                "symfony/form": ">=2.0,<2.3-dev",
-                "symfony/yaml": ">=2.0,<2.3-dev",
-                "sensio/framework-extra-bundle": ">=2.0,<2.3-dev",
-                "symfony/security": ">=2.0,<2.3-dev",
-                "jms/serializer-bundle": ">=0.9,<=0.10"
+                "sensio/framework-extra-bundle": ">=2.1,<2.3-dev",
+                "symfony/form": ">=2.1,<2.3-dev",
+                "symfony/yaml": ">=2.1,<2.3-dev",
+                "symfony/security": ">=2.1,<2.3-dev",
+                "jms/serializer-bundle": "1.0.*"
             },
             "suggest": {
-                "sensio/framework-extra-bundle": "Add support for route annotations",
-                "jms/serializer-bundle": "Add support for advanced serialization capabilities, recommended, requires >=0.9,<=0.10",
-                "symfony/serializer": "Add support for basic serialization capabilities, requires >=2.0,<2.3-dev"
+                "symfony/serializer": "Add support for basic serialization capabilities, requires >=2.0,<2.3-dev",
+                "sensio/framework-extra-bundle": "Add support for route annotations and the view response listener",
+                "jms/serializer-bundle": "Add support for advanced serialization capabilities, recommended, requires 1.0.*"
             },
-            "time": "1354518183",
+            "time": "2012-12-05 08:37:17",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.10.x-dev"
+                    "dev-master": "0.11.x-dev"
                 }
             },
             "installation-source": "source",
@@ -589,6 +590,7 @@
                     "FOS\\RestBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -637,7 +639,7 @@
             "provide": {
                 "phpcr/phpcr-implementation": "2.1.0-beta4"
             },
-            "time": "1352906109",
+            "time": "2012-11-14 15:15:09",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -694,7 +696,7 @@
             "suggest": {
                 "phpcr/phpcr-api-tests": "dev-master"
             },
-            "time": "1352894698",
+            "time": "2012-11-14 12:04:58",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -740,7 +742,7 @@
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1353191518",
+            "time": "2012-11-17 22:31:58",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -768,6 +770,171 @@
             "keywords": [
                 "sql",
                 "highlight"
+            ]
+        },
+        {
+            "name": "jms/aop-bundle",
+            "version": "dev-master",
+            "target-dir": "JMS/AopBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/JMSAopBundle",
+                "reference": "70ee8edbcf840b20445e3e42e57a249be4373a34"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmittjoh/JMSAopBundle/archive/70ee8edbcf840b20445e3e42e57a249be4373a34.zip",
+                "reference": "70ee8edbcf840b20445e3e42e57a249be4373a34",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/framework-bundle": "2.*",
+                "jms/cg": "1.*"
+            },
+            "time": "2012-11-21 10:42:51",
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.0-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "JMS\\AopBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "http://jmsyst.com",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Adds AOP capabilities to Symfony2",
+            "keywords": [
+                "annotations",
+                "aop"
+            ]
+        },
+        {
+            "name": "jms/cg",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/schmittjoh/cg-library.git",
+                "reference": "8f3441497215434c95512200fa56f168d1972e47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmittjoh/cg-library/archive/8f3441497215434c95512200fa56f168d1972e47.zip",
+                "reference": "8f3441497215434c95512200fa56f168d1972e47",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "2012-11-21 10:50:41",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "CG\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "http://jmsyst.com",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Toolset for generating PHP code",
+            "keywords": [
+                "code generation"
+            ]
+        },
+        {
+            "name": "jms/di-extra-bundle",
+            "version": "dev-master",
+            "target-dir": "JMS/DiExtraBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/JMSDiExtraBundle",
+                "reference": "0e968e308c3506c24799afa4a75df2660141316d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmittjoh/JMSDiExtraBundle/archive/0e968e308c3506c24799afa4a75df2660141316d.zip",
+                "reference": "0e968e308c3506c24799afa4a75df2660141316d",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/framework-bundle": ">=2.1.0,<2.3-dev",
+                "symfony/process": ">=2.1.0,<2.3-dev",
+                "symfony/finder": ">=2.1.0,<2.3-dev",
+                "jms/aop-bundle": ">=1.0.0,<1.2-dev",
+                "jms/metadata": "1.*"
+            },
+            "require-dev": {
+                "jms/security-extra-bundle": "1.*",
+                "symfony/validator": "*",
+                "symfony/form": "*",
+                "symfony/class-loader": "*",
+                "symfony/yaml": "*",
+                "symfony/browser-kit": "*",
+                "symfony/security-bundle": "*",
+                "symfony/twig-bundle": "*",
+                "sensio/framework-extra-bundle": "*",
+                "doctrine/doctrine-bundle": "*",
+                "doctrine/orm": "*",
+                "phpcollection/phpcollection": "0.1.*@dev"
+            },
+            "time": "2012-12-02 20:27:46",
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "JMS\\DiExtraBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "https://github.com/schmittjoh",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Allows to configure dependency injection using annotations",
+            "homepage": "http://jmsyst.com/bundles/JMSDiExtraBundle",
+            "keywords": [
+                "dependency injection",
+                "annotations"
             ]
         },
         {
@@ -823,7 +990,7 @@
                 "xml",
                 "metadata"
             ],
-            "time": "1350036797"
+            "time": "2012-10-12 10:13:17"
         },
         {
             "name": "jms/parser-lib",
@@ -842,7 +1009,7 @@
             "require": {
                 "phpoption/phpoption": ">=0.9,<2.0-dev"
             },
-            "time": "1354263064",
+            "time": "2012-11-30 08:11:04",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -861,42 +1028,111 @@
             "description": "A library for easily creating recursive-descent parsers."
         },
         {
-            "name": "jms/serializer-bundle",
-            "version": "0.10",
-            "target-dir": "JMS/SerializerBundle",
+            "name": "jms/serializer",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/schmittjoh/JMSSerializerBundle.git",
-                "reference": "0.10"
+                "url": "git://github.com/schmittjoh/serializer",
+                "reference": "6ef3863f15e874ca88d1bbedbc1e0af841ae0036"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmittjoh/JMSSerializerBundle/archive/0.10.zip",
-                "reference": "0.10",
+                "url": "https://github.com/schmittjoh/serializer/archive/6ef3863f15e874ca88d1bbedbc1e0af841ae0036.zip",
+                "reference": "6ef3863f15e874ca88d1bbedbc1e0af841ae0036",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
                 "jms/metadata": ">=1.1.0,<1.3-dev",
                 "jms/parser-lib": "1.*",
-                "phpcollection/phpcollection": "0.1.*"
-            },
-            "conflict": {
-                "symfony/framework-bundle": "<2.1-dev",
-                "jms/di-extra-bundle": "<1.3-dev"
+                "phpcollection/phpcollection": "0.1.*",
+                "doctrine/common": "2.*"
             },
             "require-dev": {
-                "symfony/doctrine-bridge": ">=2.1,<2.2-dev",
-                "symfony/framework-bundle": ">=2.1,<2.2-dev",
-                "jms/di-extra-bundle": ">=1.3-dev",
-                "symfony/yaml": ">=2.1,<2.3-dev",
-                "symfony/form": ">=2.1,<2.3-dev",
-                "symfony/validator": ">=2.1,<2.3-dev",
-                "symfony/translation": ">=2.1,<2.3-dev",
                 "twig/twig": ">=1.8,<2.0-dev",
-                "doctrine/orm": ">=2.1,<2.4-dev"
+                "doctrine/orm": ">=2.1,<2.4-dev",
+                "symfony/yaml": "2.*",
+                "symfony/translation": ">=2.0,<2.2-dev",
+                "symfony/validator": ">=2.0,<2.2-dev",
+                "symfony/form": ">=2.0,<2.2-dev",
+                "symfony/filesystem": "2.*"
             },
-            "time": "2012-12-01 12:10:48",
+            "suggest": {
+                "symfony/yaml": "Required if you'd like to serialize data to YAML format."
+            },
+            "time": "2012-12-04 17:45:43",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "JMS\\Serializer": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com",
+                    "homepage": "http://jmsyst.com",
+                    "role": "Developer of wrapped JMSSerializerBundle"
+                }
+            ],
+            "description": "Library for (de-)serializing data of any complexity; supports XML, JSON, and YAML.",
+            "homepage": "http://jmsyst.com/libs/serializer",
+            "keywords": [
+                "json",
+                "xml",
+                "serialization",
+                "deserialization",
+                "jaxb"
+            ]
+        },
+        {
+            "name": "jms/serializer-bundle",
+            "version": "dev-master",
+            "target-dir": "JMS/SerializerBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/JMSSerializerBundle.git",
+                "reference": "a2adf5321162929f2b67d6b282b459c2cd224aa5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/schmittjoh/JMSSerializerBundle/archive/a2adf5321162929f2b67d6b282b459c2cd224aa5.zip",
+                "reference": "a2adf5321162929f2b67d6b282b459c2cd224aa5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "jms/serializer": "1.0.*",
+                "jms/di-extra-bundle": ">=1.3",
+                "symfony/framework-bundle": ">=2.1,<3.0-dev"
+            },
+            "require-dev": {
+                "symfony/yaml": "*",
+                "symfony/browser-kit": "*",
+                "symfony/class-loader": "*",
+                "symfony/finder": "*",
+                "symfony/css-selector": "*",
+                "symfony/process": "*",
+                "doctrine/doctrine-bundle": "*",
+                "symfony/twig-bundle": "*",
+                "doctrine/orm": "*",
+                "symfony/form": "*",
+                "symfony/validator": "*"
+            },
+            "suggest": {
+                "symfony/yaml": "Required if you'd like to serialize content to YAML format."
+            },
+            "time": "2012-12-04 12:03:09",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -909,6 +1145,7 @@
                     "JMS\\SerializerBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache2"
             ],
@@ -916,11 +1153,11 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
+                    "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
                 }
             ],
-            "description": "Allows you to easily serialize, and deserialize object graphs of any complexity",
+            "description": "Allows you to easily serialize, and deserialize data of any complexity",
             "homepage": "http://jmsyst.com/bundles/JMSSerializerBundle",
             "keywords": [
                 "json",
@@ -957,7 +1194,7 @@
                 "silex/silex": "for the integration with your silex application",
                 "twig/twig": "for the TwigRenderer and the integration with your templates"
             },
-            "time": "1339345240",
+            "time": "2012-06-10 16:20:40",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1013,7 +1250,7 @@
                 "knplabs/knp-menu": "1.1.*",
                 "symfony/framework-bundle": ">=2.0,<2.3-dev"
             },
-            "time": "1354133109",
+            "time": "2012-11-28 20:05:09",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -1075,7 +1312,7 @@
                 "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
                 "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin"
             },
-            "time": "1354022858",
+            "time": "2012-11-27 13:27:38",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1129,7 +1366,7 @@
                 "symfony/symfony": ">=2.0",
                 "doctrine/common": ">=2.2"
             },
-            "time": "1347620900",
+            "time": "2012-09-14 11:08:20",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -1177,7 +1414,7 @@
                 "doctrine/orm": "Required when using the fixture loading functionality with an ORM and SQLite",
                 "doctrine/dbal": "Required when using the fixture loading functionality with an ORM and SQLite"
             },
-            "time": "1354198663",
+            "time": "2012-11-29 14:17:43",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -1232,7 +1469,7 @@
             "suggest": {
                 "ext-intl": "Needed for displaying the countryname in the locale language"
             },
-            "time": "1351301241",
+            "time": "2012-10-27 01:27:21",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -1281,7 +1518,7 @@
             "require-dev": {
                 "twig/twig": ">=1.8,<2.0-dev"
             },
-            "time": "1353841909",
+            "time": "2012-11-25 11:11:49",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -1310,12 +1547,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog",
-                "reference": "b23cfd3d6ce0b6c050dda723040b83a1a6d7637e"
+                "reference": "546225bed27bea7d00b836e0f7d8954272e0cf42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Seldaek/monolog/archive/b23cfd3d6ce0b6c050dda723040b83a1a6d7637e.zip",
-                "reference": "b23cfd3d6ce0b6c050dda723040b83a1a6d7637e",
+                "url": "https://github.com/Seldaek/monolog/archive/546225bed27bea7d00b836e0f7d8954272e0cf42.zip",
+                "reference": "546225bed27bea7d00b836e0f7d8954272e0cf42",
                 "shasum": ""
             },
             "require": {
@@ -1329,7 +1566,7 @@
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
                 "ext-mongo": "Allow sending log messages to a MongoDB server"
             },
-            "time": "1352907970",
+            "time": "2012-12-04 11:59:29",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1342,6 +1579,7 @@
                     "Monolog": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1377,7 +1615,7 @@
             "require": {
                 "phpoption/phpoption": ">=0.9,<2.0-dev"
             },
-            "time": "1354272617",
+            "time": "2012-11-30 10:50:17",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1416,18 +1654,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpcr/phpcr",
-                "reference": "32235a0fb92df4405a6318618e712cd58ef83d5c"
+                "reference": "2.1.0-beta7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/phpcr/phpcr/archive/32235a0fb92df4405a6318618e712cd58ef83d5c.zip",
-                "reference": "32235a0fb92df4405a6318618e712cd58ef83d5c",
+                "url": "https://github.com/phpcr/phpcr/archive/2.1.0-beta7.zip",
+                "reference": "2.1.0-beta7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "1352903597",
+            "time": "2012-11-14 14:33:17",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1440,6 +1678,7 @@
                     "PHPCR": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache-2.0"
             ],
@@ -1483,7 +1722,7 @@
                 "phpcr/phpcr": ">=2.1.0-beta5",
                 "symfony/console": ">=2.0.0,<2.3.0-dev"
             },
-            "time": "1354141858",
+            "time": "2012-11-28 22:30:58",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1543,7 +1782,7 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "1353248052",
+            "time": "2012-11-18 14:14:12",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1593,7 +1832,7 @@
             "require": {
                 "symfony/framework-bundle": "2.1.*"
             },
-            "time": "1353323932",
+            "time": "2012-11-19 11:18:52",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1648,7 +1887,7 @@
                 "sonata-project/admin-bundle": "dev-master",
                 "sonata-project/cache-bundle": "dev-master"
             },
-            "time": "1352937267",
+            "time": "2012-11-14 23:54:27",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -1684,12 +1923,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony-cmf/BlockBundle.git",
-                "reference": "d0b7304e68faa5ea40f3b8d8f3661ff15f9fc067"
+                "reference": "ed30a69b54f7a5b64e5495eddc94230b04fe0ec6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony-cmf/BlockBundle/zipball/d0b7304e68faa5ea40f3b8d8f3661ff15f9fc067",
-                "reference": "d0b7304e68faa5ea40f3b8d8f3661ff15f9fc067",
+                "url": "https://github.com/symfony-cmf/BlockBundle/archive/ed30a69b54f7a5b64e5495eddc94230b04fe0ec6.zip",
+                "reference": "ed30a69b54f7a5b64e5495eddc94230b04fe0ec6",
                 "shasum": ""
             },
             "require": {
@@ -1699,7 +1938,7 @@
                 "doctrine/phpcr-bundle": "1.0.*",
                 "doctrine/phpcr-odm": "1.0.*"
             },
-            "time": "1351276051",
+            "time": "2012-12-05 08:22:36",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1712,6 +1951,7 @@
                     "Symfony\\Cmf\\Bundle\\BlockBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1754,7 +1994,7 @@
             "suggest": {
                 "friendsofsymfony/rest-bundle": "Improved handling for different output formats"
             },
-            "time": "1354019861",
+            "time": "2012-11-27 12:37:41",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1808,7 +2048,7 @@
             "suggest": {
                 "symfony/twig-bundle": ">=2.1,<2.3-dev"
             },
-            "time": "1351276096",
+            "time": "2012-10-26 18:28:16",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1843,26 +2083,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/CreateBundle.git",
-                "reference": "c0a3b092d4acb76e92f62210732bfa110114d9cd"
+                "reference": "281ba0372bed2bb63079c2dff7a701386ad709a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony-cmf/CreateBundle/archive/c0a3b092d4acb76e92f62210732bfa110114d9cd.zip",
-                "reference": "c0a3b092d4acb76e92f62210732bfa110114d9cd",
+                "url": "https://github.com/symfony-cmf/CreateBundle/archive/281ba0372bed2bb63079c2dff7a701386ad709a4.zip",
+                "reference": "281ba0372bed2bb63079c2dff7a701386ad709a4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2",
-                "friendsofsymfony/rest-bundle": "*",
                 "midgard/createphp": "dev-master",
                 "symfony/framework-bundle": ">=2.1,<2.3-dev",
                 "symfony/assetic-bundle": ">=2.1,<2.3-dev",
-                "jms/serializer-bundle": ">=0.9,<=0.10"
+                "friendsofsymfony/rest-bundle": "dev-master",
+                "jms/serializer-bundle": "1.0.*"
             },
             "suggest": {
                 "dms/dms-filter": "if you want to filter content on your fields"
             },
-            "time": "1354387873",
+            "time": "2012-12-05 08:38:46",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1875,6 +2115,7 @@
                     "Symfony\\Cmf\\Bundle\\CreateBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1918,7 +2159,7 @@
             "suggest": {
                 "sonata-project/doctrine-phpcr-admin-bundle": "if you want to have editing capabilities"
             },
-            "time": "1354521200",
+            "time": "2012-12-03 07:53:20",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1967,7 +2208,7 @@
                 "symfony/routing": ">=2.1,<2.3-dev",
                 "symfony/http-kernel": ">=2.1,<2.3-dev"
             },
-            "time": "1354545017",
+            "time": "2012-12-03 14:30:17",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2003,12 +2244,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony-cmf/RoutingExtraBundle.git",
-                "reference": "1c30c7d596dafb64371012401e8cab026a8c5180"
+                "reference": "6ac549db4b1d2c20d023b589b1bb170654405ad4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony-cmf/RoutingExtraBundle/archive/1c30c7d596dafb64371012401e8cab026a8c5180.zip",
-                "reference": "1c30c7d596dafb64371012401e8cab026a8c5180",
+                "url": "https://github.com/symfony-cmf/RoutingExtraBundle/archive/6ac549db4b1d2c20d023b589b1bb170654405ad4.zip",
+                "reference": "6ac549db4b1d2c20d023b589b1bb170654405ad4",
                 "shasum": ""
             },
             "require": {
@@ -2033,7 +2274,7 @@
                 "symfony-cmf/content-bundle": "To optionally use the configured value for 'content_basepath' from the CoreBundle",
                 "sonata-project/doctrine-phpcr-admin-bundle": "To provide an admin interface for the PHPCR ODM documents"
             },
-            "time": "1354546698",
+            "time": "2012-12-03 21:47:54",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2046,6 +2287,7 @@
                     "Symfony\\Cmf\\Bundle\\RoutingExtraBundle": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2090,7 +2332,7 @@
                 "symfony-cmf/create-bundle": "1.0.*",
                 "sonata-project/doctrine-phpcr-admin-bundle": "1.0.*"
             },
-            "time": "1354546718",
+            "time": "2012-12-03 14:58:38",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2148,7 +2390,7 @@
             "suggest": {
                 "symfony-cmf/simple-cms-bundle": "1.0.*"
             },
-            "time": "1354093061",
+            "time": "2012-11-28 08:57:41",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2207,7 +2449,7 @@
                 "doctrine/phpcr-bundle": "1.0.*",
                 "doctrine/phpcr-odm": "1.0.*"
             },
-            "time": "1352110570",
+            "time": "2012-11-05 10:16:10",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2256,7 +2498,7 @@
                 "php": ">=5.3.2",
                 "symfony/symfony": ">=2.1,<2.3-dev"
             },
-            "time": "1351276270",
+            "time": "2012-10-26 18:31:10",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2318,7 +2560,7 @@
             "suggest": {
                 "symfony/twig-bundle": ">=2.1.0,<2.3-dev"
             },
-            "time": "1352285268",
+            "time": "2012-11-07 10:47:48",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2375,7 +2617,7 @@
                 "symfony/yaml": ">=2.1.0,<2.3-dev",
                 "symfony/config": ">=2.1.0,<2.3-dev"
             },
-            "time": "1348137624",
+            "time": "2012-09-20 10:40:24",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -2410,12 +2652,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony/symfony.git",
-                "reference": "a6e08b18de86e47f25082324a3fe7e3fd5d77626"
+                "reference": "b94d4c400f1118f943016e1ade0644127186c37d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/symfony/archive/a6e08b18de86e47f25082324a3fe7e3fd5d77626.zip",
-                "reference": "a6e08b18de86e47f25082324a3fe7e3fd5d77626",
+                "url": "https://github.com/symfony/symfony/archive/b94d4c400f1118f943016e1ade0644127186c37d.zip",
+                "reference": "b94d4c400f1118f943016e1ade0644127186c37d",
                 "shasum": ""
             },
             "require": {
@@ -2464,7 +2706,7 @@
                 "propel/propel1": "dev-master",
                 "monolog/monolog": "1.*"
             },
-            "time": "1354541321",
+            "time": "2012-12-04 08:05:42",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2478,6 +2720,7 @@
                     "SessionHandlerInterface": "src/Symfony/Component/HttpFoundation/Resources/stubs"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2514,7 +2757,7 @@
             "require": {
                 "twig/twig": "1.*"
             },
-            "time": "1349889206",
+            "time": "2012-10-10 17:13:26",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2561,7 +2804,7 @@
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "1354387289",
+            "time": "2012-12-01 18:41:29",
             "type": "library",
             "extra": {
                 "branch-alias": {
