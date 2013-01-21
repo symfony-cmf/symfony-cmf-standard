@@ -90,7 +90,7 @@ class LoadSimpleCmsData extends ContainerAware implements FixtureInterface
         $menuItem = new MultilangMenuItem();
         $menuItem->setPosition($parent, $name);
         if (is_object($target)) {
-            $menuItem->setRoute($target->getPath());
+            $menuItem->setRoute($target->getId());
         } else {
             $menuItem->setUri($target);
         }
