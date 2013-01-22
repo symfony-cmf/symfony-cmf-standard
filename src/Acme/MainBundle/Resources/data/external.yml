@@ -1,0 +1,25 @@
+static:
+    docs:
+        label:
+            en: "Website"
+            de: "Webseite"
+        uri: "http://cmf.symfony.com"
+
+    demo_redirect:
+        label:
+            en: "Demo"
+            de: "Demo"
+        route: "demo"
+        uri: "http://cmf.liip.ch"
+
+    hardcoded_dynamic:
+        label:
+            en: "Dynamic"
+            de: "Dynamisch"
+        route: "dynamic"
+
+    hardcoded_static:
+        label:
+            en: "Static"
+            de: "Statisch"
+        uri: "static"
