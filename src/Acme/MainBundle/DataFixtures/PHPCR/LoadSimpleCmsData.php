@@ -5,14 +5,17 @@ namespace Acme\MainBundle\DataFixtures\PHPCR;
 use Doctrine\Common\Persistence\ObjectManager;
 
 use Symfony\Component\Yaml\Parser;
-use Symfony\Cmf\Bundle\SimpleCmsBundle\DataFixtures\LoadCmsData;
 
-use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\Page;
+use Symfony\Cmf\Bundle\SimpleCmsBundle\DataFixtures\LoadCmsData;
+use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\MultilangRedirectRoute;
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\MultilangRoute;
+
 use Symfony\Cmf\Bundle\MenuBundle\Document\MultilangMenuItem;
 
 class LoadSimpleCmsData extends LoadCmsData
 {
+    private $yaml;
+
     public function getOrder()
     {
         return 5;
@@ -20,16 +23,16 @@ class LoadSimpleCmsData extends LoadCmsData
 
     protected function getData()
     {
-        $yaml = new Parser();
-        return $yaml->parse(file_get_contents(__DIR__.'/../../Resources/data/page.yml'));
+        return $this->yaml->parse(file_get_contents(__DIR__.'/../../Resources/data/page.yml'));
     }
 
     public function load(ObjectManager $dm)
     {
+        $this->yaml = new Parser();
+
         parent::load($dm);
 
-        $yaml = new Parser();
-        $data = $yaml->parse(file_get_contents(__DIR__ . '/../../Resources/data/external.yml'));
+        $data = $this->yaml->parse(file_get_contents(__DIR__ . '/../../Resources/data/external.yml'));
 
         $basepath = $this->container->getParameter('symfony_cmf_simple_cms.basepath');
         $home = $dm->find(null, $basepath);
@@ -44,11 +47,18 @@ class LoadSimpleCmsData extends LoadCmsData
             $menuItem = new MultilangMenuItem();
             $menuItem->setName($name);
             $menuItem->setParent($home);
-            if (!empty($overview['uri']))
+            if (!empty($overview['route'])) {
+                if (!empty($overview['uri'])) {
+                    $route = new MultilangRedirectRoute();
+                    $route->setPosition($home, $overview['route']);
+                    $route->setUri($overview['uri']);
+                    $dm->persist($route);
+                } else {
+                    $route = $dm->find(null, $basepath.'/'.$overview['route']);
+                }
+                $menuItem->setRoute($route->getId());
+            } else {
                 $menuItem->setUri($overview['uri']);
-            else
-            {
-                $menuItem->setRoute($dm->find(null, $basepath.'/'.$overview['route'])->getId());
             }
             
             $dm->persist($menuItem);
