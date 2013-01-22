@@ -12,13 +12,13 @@ static:
         name: "about"
         label: "About us"
         title: "Some information about us"
-        content: "The about us page with some content"
+        body: "The about us page with some content"
 
     contact:
         name: "contact"
         label: "Contact"
         title: "A contact page"
-        content: "Please send an email to symfony-cmf-devs@groups.google.com"
+        body: "Please send an email to symfony-cmf-devs@groups.google.com"
 
     map:
         name: "map"
@@ -38,4 +38,4 @@ static:
         label: "Team"
         parent: "/contact"
         title: "A team page"
-        content: "Our team consists of C, M and F."
+        body: "Our team consists of C, M and F."
