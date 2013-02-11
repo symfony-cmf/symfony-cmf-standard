@@ -10,7 +10,7 @@ use Symfony\Cmf\Bundle\SimpleCmsBundle\DataFixtures\LoadCmsData;
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\MultilangRedirectRoute;
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\MultilangRoute;
 
-use Symfony\Cmf\Bundle\MenuBundle\Document\MultilangMenuItem;
+use Symfony\Cmf\Bundle\MenuBundle\Document\MultilangMenuNode;
 
 class LoadSimpleCmsData extends LoadCmsData
 {
@@ -44,7 +44,7 @@ class LoadSimpleCmsData extends LoadCmsData
         $dm->persist($route);
 
         foreach ($data['static'] as $name => $overview) {
-            $menuItem = new MultilangMenuItem();
+            $menuItem = new MultilangMenuNode();
             $menuItem->setName($name);
             $menuItem->setParent($home);
             if (!empty($overview['route'])) {
