@@ -512,12 +512,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrinePHPCRBundle.git",
-                "reference": "f3d63ebb30be5ded8d0cfc9340545acebd15a4db"
+                "reference": "a94e1e90a3a3d4cea481d892b3718da7c21454a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrinePHPCRBundle/zipball/f3d63ebb30be5ded8d0cfc9340545acebd15a4db",
-                "reference": "f3d63ebb30be5ded8d0cfc9340545acebd15a4db",
+                "url": "https://api.github.com/repos/doctrine/DoctrinePHPCRBundle/zipball/a94e1e90a3a3d4cea481d892b3718da7c21454a3",
+                "reference": "a94e1e90a3a3d4cea481d892b3718da7c21454a3",
                 "shasum": ""
             },
             "require": {
@@ -566,7 +566,7 @@
                 "persistence",
                 "phpcr"
             ],
-            "time": "2013-03-19 15:18:39"
+            "time": "2013-03-19 16:39:09"
         },
         {
             "name": "doctrine/phpcr-odm",
