@@ -9,8 +9,9 @@
 
 ## Get the code
 
+
     curl -s http://getcomposer.org/installer | php --
-    php composer.phar create-project symfony-cmf/standard-edition path/to/install
+    php composer.phar create-project --stability dev symfony-cmf/standard-edition path/to/install
 
 This will fetch the main project and all it's dependencies.
 
