@@ -1,5 +1,6 @@
 {
     "name": "symfony-cmf/standard-edition",
+    "type": "project",
     "autoload": {
         "psr-0": { "": "src/" }
     },
