@@ -2731,12 +2731,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/SimpleCmsBundle.git",
-                "reference": "38fe5e82bcddd7f747ddaf1e4e8c9bfd4ac3c402"
+                "reference": "566f4a85f6d37525ed324a251d0ff9c5c3ec0a00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/SimpleCmsBundle/zipball/38fe5e82bcddd7f747ddaf1e4e8c9bfd4ac3c402",
-                "reference": "38fe5e82bcddd7f747ddaf1e4e8c9bfd4ac3c402",
+                "url": "https://api.github.com/repos/symfony-cmf/SimpleCmsBundle/zipball/566f4a85f6d37525ed324a251d0ff9c5c3ec0a00",
+                "reference": "566f4a85f6d37525ed324a251d0ff9c5c3ec0a00",
                 "shasum": ""
             },
             "require": {
@@ -2779,7 +2779,7 @@
                 "Symfony CMF",
                 "cms"
             ],
-            "time": "2013-05-07 13:09:06"
+            "time": "2013-05-07 15:27:51"
         },
         {
             "name": "symfony-cmf/symfony-cmf",
