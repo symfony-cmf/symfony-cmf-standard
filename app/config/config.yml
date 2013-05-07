@@ -58,10 +58,8 @@ doctrine_phpcr:
         auto_generate_proxy_classes: %kernel.debug%
         locales:
             en:
-                - en
                 - de
             de:
-                - de
                 - en
 
 liip_doctrine_cache:
