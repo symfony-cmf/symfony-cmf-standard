@@ -18,7 +18,7 @@ static:
         name: "contact"
         label: "Contact"
         title: "A contact page"
-        body: "Please send an email to symfony-cmf-devs@groups.google.com"
+        body: "Please send an email to cmf-devs@groups.google.com"
 
     map:
         name: "map"

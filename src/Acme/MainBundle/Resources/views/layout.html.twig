@@ -15,7 +15,7 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
-        {% include "SymfonyCmfCreateBundle::includecssfiles.html.twig" %}
+        {% include "CmfCreateBundle::includecssfiles.html.twig" %}
     {% endblock %}
 </head>
 <body>
@@ -37,7 +37,7 @@
 
     <div class="row">
         <div id="banner" class="span12">
-            <a href="https://github.com/symfony-cmf/symfony-cmf-standard"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"/></a>
+            <a href="https://github.com/symfony-cmf/cmf-standard"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"/></a>
 
             <div class="hero-unit">
                 <h1 id="logo-text"><a href="{{ path('/cms/simple') }}">Standard Edition</a></h1>
@@ -70,7 +70,7 @@
         </div>
     </div>
 </div>
-{% render controller("symfony_cmf_create.jsloader.controller:includeJSFilesAction") %}
+{% render controller("cmf_create.jsloader.controller:includeJSFilesAction") %}
 </body>
 </html>
 
