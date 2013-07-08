@@ -1,6 +1,8 @@
 {
     "name": "symfony-cmf/standard-edition",
+    "license": "MIT",
     "type": "project",
+    "description": "The \"Symfony CMF Standard Edition\" distribution",
     "autoload": {
         "psr-0": { "": "src/" }
     },
