@@ -13,3 +13,4 @@ app/SymfonyRequirements.php
 app/check.php
 
 /bin/
+/app/config/parameters.yml

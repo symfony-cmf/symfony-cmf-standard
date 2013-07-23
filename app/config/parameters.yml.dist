@@ -1,9 +1,12 @@
 parameters:
-    locale: en
-    locales: [en, de]
-    secret: 10784a86848b5412b5f7fa644e90ef24e
-    database_driver: pdo_sqlite
+    database_driver:   pdo_sqlite
     database_path: '%kernel.root_dir%/app.sqlite'
+    database_host: null
+    database_port: null
+    database_name: null
+    database_user: null
+    database_password: null
+
     phpcr_backend:
         type: doctrinedbal
         connection: doctrine.dbal.default_connection
@@ -14,8 +17,12 @@ parameters:
     phpcr_workspace: default
     phpcr_user: admin
     phpcr_pass: admin
-    database_host: null
-    database_port: null
-    database_name: null
-    database_user: null
-    database_password: null
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            en
+    locales:           [en, de]
+    secret:            ThisTokenIsNotSoSecretChangeIt

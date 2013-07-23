@@ -69,6 +69,10 @@ liip_doctrine_cache:
         nodes:
             type: file_system
 
+cmf_core:
+    publish_workflow:
+        enabled: false
+
 cmf_routing:
     dynamic:
         enabled: true
