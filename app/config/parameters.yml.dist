@@ -9,7 +9,7 @@ parameters:
 
     phpcr_backend:
         type: doctrinedbal
-        connection: doctrine.dbal.default_connection
+        connection: default
 # Enable these lines to use file system caching for the storage API
 #        caches:
 #            meta: liip_doctrine_cache.ns.meta
