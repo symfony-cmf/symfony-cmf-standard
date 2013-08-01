@@ -2658,16 +2658,16 @@
             "require": {
                 "doctrine/phpcr-bundle": "1.0.*",
                 "doctrine/phpcr-odm": "1.0.*",
-                "php": ">=5.3.2",
-                "symfony-cmf/content-bundle": "1.0.*",
-                "symfony-cmf/core-bundle": "~1.0.0-beta2",
-                "symfony-cmf/routing-bundle": ">1.1.0-alpha1,<1.2.0-dev",
+                "php": ">=5.3.3",
+                "symfony-cmf/content-bundle": "~1.0.0-RC1",
+                "symfony-cmf/core-bundle": "~1.0.0-RC1",
+                "symfony-cmf/routing-bundle": "~1.1.0-RC1",
                 "symfony/framework-bundle": "~2.2"
             },
             "suggest": {
                 "sonata-project/doctrine-phpcr-admin-bundle": "1.0.*",
                 "symfony-cmf/create-bundle": "1.0.*",
-                "symfony-cmf/menu-bundle": "1.0.*"
+                "symfony-cmf/menu-bundle": "~1.0.0-RC1"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -2696,7 +2696,7 @@
                 "Symfony CMF",
                 "cms"
             ],
-            "time": "2013-08-01 06:42:57"
+            "time": "2013-08-01 08:15:08"
         },
         {
             "name": "symfony-cmf/symfony-cmf",
