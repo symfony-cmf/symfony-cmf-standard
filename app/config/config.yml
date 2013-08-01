@@ -70,32 +70,30 @@ liip_doctrine_cache:
             type: file_system
 
 cmf_core:
+    persistence:
+        phpcr:
+            enabled: true
+            use_sonata_admin: false
+            basepath: /cms
     publish_workflow:
         enabled: false
+    multilang:
+        locales: %locales%
 
-cmf_routing:
-    dynamic:
-        enabled: true
+cmf_create:
+    phpcr_odm: true
 
 cmf_simple_cms:
     routing:
         templates_by_class:
             Symfony\Cmf\Bundle\SimpleCmsBundle\Document\Page:  CmfSimpleCmsBundle:Page:index.html.twig
         controllers_by_class:
-            Symfony\Cmf\Bundle\RoutingBundle\Document\RedirectRoute:  cmf_routing.redirect_controller:redirectAction
+            Symfony\Cmf\Bundle\RoutingBundle\Doctrine\Phpcr\RedirectRoute:  cmf_routing.redirect_controller:redirectAction
     multilang:
         locales: %locales%
-    use_sonata_admin: false
 
 knp_menu:
     twig: true
-
-cmf_menu:
-    use_sonata_admin: false
-    menu_basepath: /cms
-
-cmf_create:
-    phpcr_odm: true
 
 lunetics_locale:
     strict_mode: true
