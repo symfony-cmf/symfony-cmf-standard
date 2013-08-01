@@ -2528,12 +2528,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/Routing.git",
-                "reference": "1.0.0-RC1"
+                "reference": "1.1.0-RC1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/1.0.0-RC1",
-                "reference": "1.0.0-RC1",
+                "url": "https://api.github.com/repos/symfony-cmf/Routing/zipball/1.1.0-RC1",
+                "reference": "1.1.0-RC1",
                 "shasum": ""
             },
             "require": {
