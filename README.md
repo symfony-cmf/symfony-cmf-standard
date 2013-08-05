@@ -1,8 +1,8 @@
 # Symfony CMF Standard Edition
 
 [![Build Status](https://secure.travis-ci.org/symfony-cmf/symfony-cmf-standard.png)](http://travis-ci.org/symfony-cmf/symfony-cmf-standard)
-[![Latest Stable Version](https://poser.pugx.org/symfony-cmf/symfony-cmf-standard/version.png)](https://packagist.org/packages/symfony-cmf/symfony-cmf-standard)
-[![Total Downloads](https://poser.pugx.org/symfony-cmf/symfony-cmf-standard/d/total.png)](https://packagist.org/packages/symfony-cmf/symfony-cmf-standard)
+[![Latest Stable Version](https://poser.pugx.org/symfony-cmf/standard-edition/version.png)](https://packagist.org/packages/symfony-cmf/standard-edition)
+[![Total Downloads](https://poser.pugx.org/symfony-cmf/standard-edition/d/total.png)](https://packagist.org/packages/symfony-cmf/standard-edition)
 
 This bundle is part of the [Symfony Content Management Framework (CMF)](http://cmf.symfony.com/)
 and licensed under the [MIT License](LICENSE).
