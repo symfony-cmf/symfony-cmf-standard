@@ -1,65 +1,40 @@
-# Symfony CMF Standard Edition [![Build Status](https://secure.travis-ci.org/symfony-cmf/symfony-cmf-standard.png?branch=master)](http://travis-ci.org/symfony-cmf/symfony-cmf-standard)
+# Symfony CMF Standard Edition
 
-### You will need:
-  * Git 1.6+
-  * PHP 5.3.3+
-  * php5-intl
-  * phpunit 3.6+ (optional)
-  * composer
+[![Build Status](https://secure.travis-ci.org/symfony-cmf/symfony-cmf-standard.png)](http://travis-ci.org/symfony-cmf/symfony-cmf-standard)
+[![Latest Stable Version](https://poser.pugx.org/symfony-cmf/symfony-cmf-standard/version.png)](https://packagist.org/packages/symfony-cmf/symfony-cmf-standard)
+[![Total Downloads](https://poser.pugx.org/symfony-cmf/symfony-cmf-standard/d/total.png)](https://packagist.org/packages/symfony-cmf/symfony-cmf-standard)
 
-## Get the code
+This bundle is part of the [Symfony Content Management Framework (CMF)](http://cmf.symfony.com/)
+and licensed under the [MIT License](LICENSE).
+
+The Symfony CMF Standard Edition (SE) is a distribution of the CMF based on all
+the main components needed for most common use cases.
+
+## Requirements
+
+* Symfony 2.3.x
+* See also the `require` section of [composer.json](composer.json)
 
 
-    curl -s http://getcomposer.org/installer | php --
-    php composer.phar create-project --stability dev symfony-cmf/standard-edition path/to/install
+## Documentation
 
-This will fetch the main project and all it's dependencies.
+For the install guide and reference, see:
 
-The next step is to setup the database, if you want to use Sqlite as your database backend just go ahead and run the following:
+* [symfony-cmf-standard documentation](http://symfony.com/doc/master/cmf/getting_started/installing_symfony_cmf.html)
 
-    app/console doctrine:database:create
-    app/console doctrine:phpcr:init:dbal
-    app/console doctrine:phpcr:repository:init
-    app/console doctrine:phpcr:fixtures:load
+See also:
 
-If you prefer to use another database backend, for example MySQL, run the Symfony configurator (point your browser 
-to /web/config.php) or set your database connection parameters in app/config/parameters.yml. Make sure you leave
-the 'database_path' property at 'null' in order to use another driver than SQLite. Leaving the field blank in the
-web-configurator should set it to 'null'.
+* [All Symfony CMF documentation](http://symfony.com/doc/master/cmf/index.html) - complete Symfony CMF reference
+* [Symfony CMF Website](http://cmf.symfony.com/) - introduction, live demo, support and community links
 
-## Access by web browser
 
-Create an apache virtual host entry along the lines of
+## Contributing
 
-    <Virtualhost *:80>
-        Servername symfony-cmf-standard.lo
-        DocumentRoot /path/to/symfony-cmf/symfony-cmf-standard/web
-        <Directory /path/to/symfony-cmf/symfony-cmf-standard>
-            AllowOverride All
-        </Directory>
-    </Virtualhost>
+Pull requests are welcome. Please see our [CONTRIBUTING](CONTRIBUTING.md) guide.
 
-And add an entry to your hosts file for "symfony-cmf-standard.lo"
+Unit and/or functional tests exist for this bundle. See the
+[Testing documentation](http://symfony.com/doc/master/cmf/components/testing.html)
+for a guide to running the tests.
 
-If you are running Symfony2 for the first time, run http://symfony-cmf-standard.lo/config.php to ensure your
-system settings have been setup inline with the expected behaviour of the Symfony2 framework.
-
-Then point your browser to http://symfony-cmf-standard.lo/app_dev.php or http://symfony-cmf-standard.lo
-
-Functional tests are written with PHPUnit. Note that Bundles and Components are tested independently.
-
-    app/console doctrine:phpcr:workspace:create standard_test
-    phpunit -c app
-
-## Configuration
-
-You can use the same steps as for the Symfony2 Standard Edition to check and configure the application:
-https://github.com/symfony/symfony-standard#2-checking-your-system-configuration
-
-Note that if you want to improve performance you can enable the caching system:
-https://github.com/symfony-cmf/symfony-cmf-standard/blob/master/app/config/parameters.yml#L10
-
-This will enable caching of storage API lookups into the file system. However it can easily be
-configured to instead use any of the caching backends supported by Doctrine Common and exposed
-by LiipDoctrineCacheBundle:
-https://github.com/liip/LiipDoctrineCacheBundle
+Thanks to
+[everyone who has contributed](https://github.com/symfony-cmf/symfony-cmf-standard/contributors) already.
