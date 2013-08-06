@@ -4,11 +4,13 @@
 [![Latest Stable Version](https://poser.pugx.org/symfony-cmf/standard-edition/version.png)](https://packagist.org/packages/symfony-cmf/standard-edition)
 [![Total Downloads](https://poser.pugx.org/symfony-cmf/standard-edition/d/total.png)](https://packagist.org/packages/symfony-cmf/standard-edition)
 
-This bundle is part of the [Symfony Content Management Framework (CMF)](http://cmf.symfony.com/)
+The Symfony CMF Standard Edition (SE) is a distribution of the
+[Symfony Content Management Framework (CMF)](http://cmf.symfony.com/)
 and licensed under the [MIT License](LICENSE).
 
-The Symfony CMF Standard Edition (SE) is a distribution of the CMF based on all
-the main components needed for most common use cases.
+This distribution is based on all the main CMF components needed for most common
+use cases, and can be used to create a new Symfony/CMF project from scratch.
+
 
 ## Requirements
 
