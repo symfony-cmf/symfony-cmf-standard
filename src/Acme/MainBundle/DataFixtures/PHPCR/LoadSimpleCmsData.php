@@ -6,13 +6,13 @@ use Doctrine\Common\Persistence\ObjectManager;
 
 use Symfony\Component\Yaml\Parser;
 
-use Symfony\Cmf\Bundle\SimpleCmsBundle\DataFixtures\LoadCmsData;
-use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\MultilangRedirectRoute;
-use Symfony\Cmf\Bundle\SimpleCmsBundle\Document\MultilangRoute;
+use Symfony\Cmf\Bundle\SimpleCmsBundle\DataFixtures\Phpcr\AbstractLoadPageData;
+use Symfony\Cmf\Bundle\SimpleCmsBundle\Doctrine\Phpcr\MultilangRedirectRoute;
+use Symfony\Cmf\Bundle\SimpleCmsBundle\Doctrine\Phpcr\MultilangRoute;
 
 use Symfony\Cmf\Bundle\MenuBundle\Doctrine\Phpcr\MenuNode;
 
-class LoadSimpleCmsData extends LoadCmsData
+class LoadSimpleCmsData extends AbstractLoadPageData
 {
     private $yaml;
 
@@ -26,6 +26,11 @@ class LoadSimpleCmsData extends LoadCmsData
         return $this->yaml->parse(file_get_contents(__DIR__.'/../../Resources/data/page.yml'));
     }
 
+    protected function createPageInstance($className)
+    {
+        return new $className(true, false, true);
+    }
+
     public function load(ObjectManager $dm)
     {
         $this->yaml = new Parser();
@@ -34,7 +39,7 @@ class LoadSimpleCmsData extends LoadCmsData
 
         $data = $this->yaml->parse(file_get_contents(__DIR__ . '/../../Resources/data/external.yml'));
 
-        $basepath = $this->container->getParameter('cmf_simple_cms.basepath');
+        $basepath = $this->getBasePath();
         $home = $dm->find(null, $basepath);
 
         $route = new MultilangRoute();
