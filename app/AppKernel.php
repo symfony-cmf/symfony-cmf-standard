@@ -21,6 +21,7 @@ class AppKernel extends Kernel
             new Lunetics\LocaleBundle\LuneticsLocaleBundle(),
             new FOS\RestBundle\FOSRestBundle(),
             new JMS\SerializerBundle\JMSSerializerBundle($this),
+            new Liip\ImagineBundle\LiipImagineBundle(),
 
             // enable cmf bundles
             new Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
@@ -28,6 +29,7 @@ class AppKernel extends Kernel
             new Symfony\Cmf\Bundle\MenuBundle\CmfMenuBundle(),
             new Symfony\Cmf\Bundle\ContentBundle\CmfContentBundle(),
             new Symfony\Cmf\Bundle\SimpleCmsBundle\CmfSimpleCmsBundle(),
+            new Symfony\Cmf\Bundle\MediaBundle\CmfMediaBundle(),
             new Symfony\Cmf\Bundle\CreateBundle\CmfCreateBundle(),
 
             // and the sandbox bundle

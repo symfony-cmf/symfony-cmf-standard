@@ -80,9 +80,6 @@ cmf_core:
     multilang:
         locales: %locales%
 
-cmf_create:
-    phpcr_odm: true
-
 cmf_simple_cms:
     routing:
         templates_by_class:

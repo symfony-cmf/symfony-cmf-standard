@@ -26,6 +26,11 @@ class LoadSimpleCmsData extends AbstractLoadPageData
         return $this->yaml->parse(file_get_contents(__DIR__.'/../../Resources/data/page.yml'));
     }
 
+    protected function createPageInstance($className)
+    {
+        return new $className(true, false, true);
+    }
+
     public function load(ObjectManager $dm)
     {
         $this->yaml = new Parser();
