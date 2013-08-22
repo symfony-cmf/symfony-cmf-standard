@@ -19,15 +19,17 @@
         "symfony-cmf/create-bundle": "1.0.0-beta4",
         "jackalope/jackalope-doctrine-dbal":"1.0.0-beta3",
         "doctrine/doctrine-bundle": "1.2.*",
-        "doctrine/doctrine-fixtures-bundle": "2.1.*",
+        "doctrine/data-fixtures": "1.0.*",
         "liip/functional-test-bundle": "1.0.*",
         "lunetics/locale-bundle": "2.2.*",
         "liip/doctrine-cache-bundle": "1.0.*",
         "incenteev/composer-parameter-handler": "~2.0",
-        "liip/imagine-bundle": "~0.12"
+        "liip/imagine-bundle": "~0.12",
+        "wjzijderveld/check-bundles": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
+            "WillemJan\\CheckBundles\\Composer\\CheckBundles::postPackageUpdate",
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Symfony\\Cmf\\Bundle\\CreateBundle\\Composer\\ScriptHandler::downloadCreate",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
@@ -35,6 +37,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-update-cmd": [
+            "WillemJan\\CheckBundles\\Composer\\CheckBundles::postPackageUpdate",
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Symfony\\Cmf\\Bundle\\CreateBundle\\Composer\\ScriptHandler::downloadCreate",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
@@ -46,6 +49,7 @@
         "bin-dir": "bin"
     },
     "extra": {
+        "checkbundles-ignore": ["Liip\\FunctionalTestBundle\\LiipFunctionalTestBundle"],
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
         "incenteev-parameters": {
