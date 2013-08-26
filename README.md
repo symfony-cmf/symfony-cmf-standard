@@ -22,7 +22,7 @@ use cases, and can be used to create a new Symfony/CMF project from scratch.
 
 For the install guide and reference, see:
 
-* [symfony-cmf-standard documentation](http://symfony.com/doc/master/cmf/getting_started/installing_symfony_cmf.html)
+* [symfony-cmf-standard documentation](http://symfony.com/doc/master/cmf/book/installation.html)
 
 See also:
 
