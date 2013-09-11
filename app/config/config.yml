@@ -79,6 +79,9 @@ cmf_core:
     multilang:
         locales: %locales%
 
+cmf_create:
+    editor_base_path: /bundles/cmfcreate/vendor/ckeditor/
+
 cmf_simple_cms:
     routing:
         templates_by_class:
