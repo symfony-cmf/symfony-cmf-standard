@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5d1c513546429007d6354a54b7a288fe",
+    "hash": "7575feecf69b330fbcd24ae6761e2a59",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -794,12 +794,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "09b63b2e18779b7ff62efbc34ac7303ba2cb1f98"
+                "reference": "2240da74617e16904aac6d56b99bd3b190bae74d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/09b63b2e18779b7ff62efbc34ac7303ba2cb1f98",
-                "reference": "09b63b2e18779b7ff62efbc34ac7303ba2cb1f98",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/2240da74617e16904aac6d56b99bd3b190bae74d",
+                "reference": "2240da74617e16904aac6d56b99bd3b190bae74d",
                 "shasum": ""
             },
             "require": {
@@ -862,7 +862,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2013-10-03 11:31:51"
+            "time": "2013-10-06 06:20:25"
         },
         {
             "name": "imagine/imagine",
@@ -970,23 +970,23 @@
         },
         {
             "name": "jackalope/jackalope",
-            "version": "1.0.0-RC1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jackalope/jackalope.git",
-                "reference": "2a6329f325f6aff536d9efa2d8fbea33ca690cc2"
+                "reference": "ae9d494c4b907495c369b98d07faa013542931a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jackalope/jackalope/zipball/2a6329f325f6aff536d9efa2d8fbea33ca690cc2",
-                "reference": "2a6329f325f6aff536d9efa2d8fbea33ca690cc2",
+                "url": "https://api.github.com/repos/jackalope/jackalope/zipball/ae9d494c4b907495c369b98d07faa013542931a3",
+                "reference": "ae9d494c4b907495c369b98d07faa013542931a3",
                 "shasum": ""
             },
             "require": {
                 "ext-libxml": "*",
                 "jackalope/jackalope-transport": "*",
                 "php": ">=5.3.2",
-                "phpcr/phpcr": "=2.1.0-RC1",
+                "phpcr/phpcr": "~2.1.0-RC1",
                 "phpcr/phpcr-utils": "~1.0.0-RC1"
             },
             "provide": {
@@ -1017,27 +1017,27 @@
             "description": "Jackalope PHPCR library",
             "homepage": "http://jackalope.github.io",
             "keywords": [
-                "phpcr implementation"
+                "phpcr"
             ],
-            "time": "2013-09-25 19:17:44"
+            "time": "2013-10-05 21:08:30"
         },
         {
             "name": "jackalope/jackalope-doctrine-dbal",
-            "version": "1.0.0-RC2",
+            "version": "1.0.0-RC3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jackalope/jackalope-doctrine-dbal.git",
-                "reference": "8356c086f83cff57e82ea1437d175ba555814d3c"
+                "reference": "f834e33a2805dc3a4aec11f777c9df1d927eba97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jackalope/jackalope-doctrine-dbal/zipball/8356c086f83cff57e82ea1437d175ba555814d3c",
-                "reference": "8356c086f83cff57e82ea1437d175ba555814d3c",
+                "url": "https://api.github.com/repos/jackalope/jackalope-doctrine-dbal/zipball/f834e33a2805dc3a4aec11f777c9df1d927eba97",
+                "reference": "f834e33a2805dc3a4aec11f777c9df1d927eba97",
                 "shasum": ""
             },
             "require": {
                 "doctrine/dbal": ">=2.2.0,<2.5",
-                "jackalope/jackalope": "1.0.0-RC1",
+                "jackalope/jackalope": "~1.0.0-RC1",
                 "php": ">=5.3.3",
                 "phpcr/phpcr": "~2.1.0-RC1",
                 "phpcr/phpcr-utils": "~1.0.0-RC1"
@@ -1073,13 +1073,14 @@
                     "homepage": "https://github.com/jackalope/jackalope-jackrabbit/contributors"
                 }
             ],
-            "description": "Jackalope Transport library",
+            "description": "Jackalope Transport library for Doctrine DBAL",
             "homepage": "http://jackalope.github.io",
             "keywords": [
                 "doctrine-dbal",
+                "phpcr",
                 "transport implementation"
             ],
-            "time": "2013-10-02 16:29:28"
+            "time": "2013-10-06 17:38:42"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1927,7 +1928,7 @@
         },
         {
             "name": "phpcr/phpcr",
-            "version": "2.1.0-RC1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpcr/phpcr.git",
