@@ -51,7 +51,9 @@
     "extra": {
         "checkbundles-ignore": [
             "Liip\\FunctionalTestBundle\\LiipFunctionalTestBundle",
-            "Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle"
+            "Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle",
+            "Sonata\\BlockBundle\\SonataBlockBundle",
+            "Symfony\\Cmf\\Bundle\\BlockBundle\\CmfBlockBundle"
         ],
         "symfony-app-dir": "app",
         "symfony-web-dir": "web",
