@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "313af5d128dfc793c06fde9ea9700c64",
+    "hash": "832713d73ff8e8168a9fd81cc564a14e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -794,12 +794,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSRestBundle.git",
-                "reference": "2240da74617e16904aac6d56b99bd3b190bae74d"
+                "reference": "d24a0de8f99df40de9072fa0cf014a9d6ff47dde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/2240da74617e16904aac6d56b99bd3b190bae74d",
-                "reference": "2240da74617e16904aac6d56b99bd3b190bae74d",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSRestBundle/zipball/d24a0de8f99df40de9072fa0cf014a9d6ff47dde",
+                "reference": "d24a0de8f99df40de9072fa0cf014a9d6ff47dde",
                 "shasum": ""
             },
             "require": {
@@ -862,7 +862,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2013-10-06 06:20:25"
+            "time": "2013-10-09 18:03:55"
         },
         {
             "name": "imagine/imagine",
@@ -1023,16 +1023,16 @@
         },
         {
             "name": "jackalope/jackalope-doctrine-dbal",
-            "version": "1.0.0-RC3",
+            "version": "1.0.0-RC4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jackalope/jackalope-doctrine-dbal.git",
-                "reference": "f834e33a2805dc3a4aec11f777c9df1d927eba97"
+                "reference": "816721241264ae86620e44b1bdd3ab7861c53b39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jackalope/jackalope-doctrine-dbal/zipball/f834e33a2805dc3a4aec11f777c9df1d927eba97",
-                "reference": "f834e33a2805dc3a4aec11f777c9df1d927eba97",
+                "url": "https://api.github.com/repos/jackalope/jackalope-doctrine-dbal/zipball/816721241264ae86620e44b1bdd3ab7861c53b39",
+                "reference": "816721241264ae86620e44b1bdd3ab7861c53b39",
                 "shasum": ""
             },
             "require": {
@@ -1040,7 +1040,7 @@
                 "jackalope/jackalope": "~1.0.0-RC1",
                 "php": ">=5.3.3",
                 "phpcr/phpcr": "~2.1.0-RC1",
-                "phpcr/phpcr-utils": "~1.0.0-RC1"
+                "phpcr/phpcr-utils": "~1.0.0-RC2"
             },
             "provide": {
                 "jackalope/jackalope-transport": "1.0.0-RC1"
@@ -1080,7 +1080,7 @@
                 "phpcr",
                 "transport implementation"
             ],
-            "time": "2013-10-06 17:38:42"
+            "time": "2013-10-09 14:53:38"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1589,63 +1589,6 @@
             "time": "2013-08-27 08:04:50"
         },
         {
-            "name": "liip/functional-test-bundle",
-            "version": "dev-master",
-            "target-dir": "Liip/FunctionalTestBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/liip/LiipFunctionalTestBundle.git",
-                "reference": "f4f7f4a8eec8d38b2101faa5ed4ca1de847c0da6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/liip/LiipFunctionalTestBundle/zipball/f4f7f4a8eec8d38b2101faa5ed4ca1de847c0da6",
-                "reference": "f4f7f4a8eec8d38b2101faa5ed4ca1de847c0da6",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/common": "2.*",
-                "php": ">=5.3.2",
-                "symfony/browser-kit": "~2.0",
-                "symfony/framework-bundle": "~2.0"
-            },
-            "suggest": {
-                "doctrine/dbal": "Required when using the fixture loading functionality with an ORM and SQLite",
-                "doctrine/doctrine-fixtures-bundle": "Required when using the fixture loading functionality",
-                "doctrine/orm": "Required when using the fixture loading functionality with an ORM and SQLite"
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Liip\\FunctionalTestBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Liip AG",
-                    "homepage": "http://www.liip.ch/"
-                },
-                {
-                    "name": "Community contributions",
-                    "homepage": "https://github.com/liip/LiipFunctionalTestBundle/contributors"
-                }
-            ],
-            "description": "This bundles provides additional functional test-cases for Symfony2 applications",
-            "keywords": [
-                "Symfony2"
-            ],
-            "time": "2013-09-24 06:16:49"
-        },
-        {
             "name": "liip/imagine-bundle",
             "version": "v0.16.0",
             "target-dir": "Liip/ImagineBundle",
@@ -1987,12 +1930,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpcr/phpcr-utils.git",
-                "reference": "af544766642e5b72a97b95e5f0bc76a33cc1003c"
+                "reference": "0e829ce8dd0b73520b8dbe9777414ded802c724f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpcr/phpcr-utils/zipball/af544766642e5b72a97b95e5f0bc76a33cc1003c",
-                "reference": "af544766642e5b72a97b95e5f0bc76a33cc1003c",
+                "url": "https://api.github.com/repos/phpcr/phpcr-utils/zipball/0e829ce8dd0b73520b8dbe9777414ded802c724f",
+                "reference": "0e829ce8dd0b73520b8dbe9777414ded802c724f",
                 "shasum": ""
             },
             "require": {
@@ -2042,7 +1985,7 @@
                 "contentrepository",
                 "phpcr"
             ],
-            "time": "2013-10-07 15:35:30"
+            "time": "2013-10-08 14:42:19"
         },
         {
             "name": "phpoption/phpoption",
@@ -2432,29 +2375,29 @@
         },
         {
             "name": "symfony-cmf/create-bundle",
-            "version": "1.0.0-RC2",
+            "version": "1.0.0-RC3",
             "target-dir": "Symfony/Cmf/Bundle/CreateBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/CreateBundle.git",
-                "reference": "e4193efb2cd0b092708c64397b415fd3d8e0ee09"
+                "reference": "ffc5270b837461383466cd10533a621fd1f93549"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/CreateBundle/zipball/e4193efb2cd0b092708c64397b415fd3d8e0ee09",
-                "reference": "e4193efb2cd0b092708c64397b415fd3d8e0ee09",
+                "url": "https://api.github.com/repos/symfony-cmf/CreateBundle/zipball/ffc5270b837461383466cd10533a621fd1f93549",
+                "reference": "ffc5270b837461383466cd10533a621fd1f93549",
                 "shasum": ""
             },
             "require": {
                 "friendsofsymfony/rest-bundle": ">=0.12.0,<2.0",
                 "jms/serializer-bundle": "0.12.*",
-                "midgard/createphp": "dev-master",
+                "midgard/createphp": "0.9.*",
                 "php": ">=5.3.3",
                 "symfony/assetic-bundle": "~2.1",
                 "symfony/framework-bundle": "~2.1"
             },
             "suggest": {
-                "symfony-cmf/media-bundle": "When using the default image support, ~1.0.0-RC2"
+                "symfony-cmf/media-bundle": "When using the default image support, ~1.0.0"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -2482,7 +2425,7 @@
                 }
             ],
             "description": "Symfony Bundle for createphp and create.js. The easiest way to make any site editable and have semantic annotations with RDFa.",
-            "time": "2013-10-02 21:15:47"
+            "time": "2013-10-09 05:51:25"
         },
         {
             "name": "symfony-cmf/media-bundle",
@@ -2732,17 +2675,17 @@
         },
         {
             "name": "symfony-cmf/simple-cms-bundle",
-            "version": "1.0.0-RC5",
+            "version": "1.0.0-RC6",
             "target-dir": "Symfony/Cmf/Bundle/SimpleCmsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony-cmf/SimpleCmsBundle.git",
-                "reference": "31f47d9d9211d95dcc6a99e8fe07324b4211cde1"
+                "reference": "bc8d46c2f91391a2a1db5becbac34d85a35a1288"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony-cmf/SimpleCmsBundle/zipball/31f47d9d9211d95dcc6a99e8fe07324b4211cde1",
-                "reference": "31f47d9d9211d95dcc6a99e8fe07324b4211cde1",
+                "url": "https://api.github.com/repos/symfony-cmf/SimpleCmsBundle/zipball/bc8d46c2f91391a2a1db5becbac34d85a35a1288",
+                "reference": "bc8d46c2f91391a2a1db5becbac34d85a35a1288",
                 "shasum": ""
             },
             "require": {
@@ -2792,7 +2735,7 @@
                 "Symfony CMF",
                 "cms"
             ],
-            "time": "2013-10-04 11:13:28"
+            "time": "2013-10-09 14:51:37"
         },
         {
             "name": "symfony-cmf/symfony-cmf",
@@ -3283,12 +3226,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wjzijderveld/CheckBundles.git",
-                "reference": "37a8b3280c761bde828bddf43eb7b1687b070277"
+                "reference": "3dd5113e3f557efa03951708797b0952adaf7ed8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wjzijderveld/CheckBundles/zipball/37a8b3280c761bde828bddf43eb7b1687b070277",
-                "reference": "37a8b3280c761bde828bddf43eb7b1687b070277",
+                "url": "https://api.github.com/repos/wjzijderveld/CheckBundles/zipball/3dd5113e3f557efa03951708797b0952adaf7ed8",
+                "reference": "3dd5113e3f557efa03951708797b0952adaf7ed8",
                 "shasum": ""
             },
             "require": {
@@ -3327,11 +3270,67 @@
                 "script",
                 "symfony"
             ],
-            "time": "2013-08-01 11:32:17"
+            "time": "2013-10-08 13:03:59"
         }
     ],
     "packages-dev": [
-
+        {
+            "name": "liip/functional-test-bundle",
+            "version": "dev-master",
+            "target-dir": "Liip/FunctionalTestBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liip/LiipFunctionalTestBundle.git",
+                "reference": "6054badcd590b63162ed7fdbd0d9391db88eff85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/liip/LiipFunctionalTestBundle/zipball/6054badcd590b63162ed7fdbd0d9391db88eff85",
+                "reference": "6054badcd590b63162ed7fdbd0d9391db88eff85",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/common": "2.*",
+                "php": ">=5.3.2",
+                "symfony/browser-kit": "~2.0",
+                "symfony/framework-bundle": "~2.0"
+            },
+            "suggest": {
+                "doctrine/dbal": "Required when using the fixture loading functionality with an ORM and SQLite",
+                "doctrine/doctrine-fixtures-bundle": "Required when using the fixture loading functionality",
+                "doctrine/orm": "Required when using the fixture loading functionality with an ORM and SQLite"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Liip\\FunctionalTestBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Liip AG",
+                    "homepage": "http://www.liip.ch/"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/liip/LiipFunctionalTestBundle/contributors"
+                }
+            ],
+            "description": "This bundles provides additional functional test-cases for Symfony2 applications",
+            "keywords": [
+                "Symfony2"
+            ],
+            "time": "2013-10-08 12:57:10"
+        }
     ],
     "aliases": [
 
