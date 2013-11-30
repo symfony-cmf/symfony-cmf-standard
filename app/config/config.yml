@@ -4,6 +4,7 @@ imports:
 framework:
     #esi:             ~
     translator:      { fallback: en }
+    csrf_protection: true
     secret:          %secret%
     router:          { resource: "%kernel.root_dir%/config/routing.yml" }
     form:            true
