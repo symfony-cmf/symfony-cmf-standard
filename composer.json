@@ -61,6 +61,7 @@
             "Liip\\FunctionalTestBundle\\LiipFunctionalTestBundle",
             "Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle",
             "Sonata\\BlockBundle\\SonataBlockBundle",
+            "Sonata\\CoreBundle\\SonataCoreBundle",
             "Symfony\\Cmf\\Bundle\\BlockBundle\\CmfBlockBundle"
         ],
         "symfony-app-dir": "app",
