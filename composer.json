@@ -6,7 +6,7 @@
     "authors": [
         {
             "name": "Symfony CMF Community",
-            "homepage": "https://github.com/symfony-cmf/SimpleCmsBundle/contributors"
+            "homepage": "https://github.com/symfony-cmf/symfony-cmf-standard/contributors"
         }
     ],
     "autoload": {
@@ -61,6 +61,7 @@
             "Liip\\FunctionalTestBundle\\LiipFunctionalTestBundle",
             "Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle",
             "Sonata\\BlockBundle\\SonataBlockBundle",
+            "Sonata\\CoreBundle\\SonataCoreBundle",
             "Symfony\\Cmf\\Bundle\\BlockBundle\\CmfBlockBundle"
         ],
         "symfony-app-dir": "app",
