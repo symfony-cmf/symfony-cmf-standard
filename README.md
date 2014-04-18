@@ -1,3 +1,3 @@
 # MOVED
 
-## Please see https://github.com/symfony-cmf/symfony-standard
+## Please see https://github.com/symfony-cmf/standard-edition
