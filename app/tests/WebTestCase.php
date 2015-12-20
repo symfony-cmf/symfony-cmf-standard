@@ -1,14 +1,21 @@
 <?php
 
+/*
+ * This file is part of the Symfony CMF package.
+ *
+ * (c) 2011-2015 Symfony CMF
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Sandbox;
 
 use Liip\FunctionalTestBundle\Test\WebTestCase as BaseWebTestCase;
-use Doctrine\Common\DataFixtures\Executor\PHPCRExecutor;
-use Doctrine\Common\DataFixtures\Purger\PHPCRPurger;
 
 abstract class WebTestCase extends BaseWebTestCase
 {
-    static protected $fixturesLoaded = false;
+    protected static $fixturesLoaded = false;
 
     public function setUp()
     {
