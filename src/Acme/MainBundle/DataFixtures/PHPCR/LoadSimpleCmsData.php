@@ -1,15 +1,21 @@
 <?php
 
+/*
+ * This file is part of the Symfony CMF package.
+ *
+ * (c) 2011-2015 Symfony CMF
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Acme\MainBundle\DataFixtures\PHPCR;
 
 use Doctrine\Common\Persistence\ObjectManager;
-
 use Symfony\Component\Yaml\Parser;
-
 use Symfony\Cmf\Bundle\SimpleCmsBundle\DataFixtures\Phpcr\AbstractLoadPageData;
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Doctrine\Phpcr\MultilangRedirectRoute;
 use Symfony\Cmf\Bundle\SimpleCmsBundle\Doctrine\Phpcr\MultilangRoute;
-
 use Symfony\Cmf\Bundle\MenuBundle\Doctrine\Phpcr\MenuNode;
 
 class LoadSimpleCmsData extends AbstractLoadPageData
@@ -37,7 +43,7 @@ class LoadSimpleCmsData extends AbstractLoadPageData
 
         parent::load($dm);
 
-        $data = $this->yaml->parse(file_get_contents(__DIR__ . '/../../Resources/data/external.yml'));
+        $data = $this->yaml->parse(file_get_contents(__DIR__.'/../../Resources/data/external.yml'));
 
         $basepath = $this->getBasePath();
         $home = $dm->find(null, $basepath);
@@ -65,7 +71,7 @@ class LoadSimpleCmsData extends AbstractLoadPageData
             } else {
                 $menuItem->setUri($overview['uri']);
             }
-            
+
             $dm->persist($menuItem);
             foreach ($overview['label'] as $locale => $label) {
                 $menuItem->setLabel($label);
