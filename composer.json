@@ -15,7 +15,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.3.*",
+        "symfony/symfony": "2.6.*",
         "twig/extensions": "1.0.*",
         "symfony/monolog-bundle": "2.3.*",
         "symfony/assetic-bundle": "2.3.*",
