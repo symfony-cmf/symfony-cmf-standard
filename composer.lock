@@ -1,22 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
     ],
-    "hash": "2edd8200c7ddf428203e35d55680060d",
+    "content-hash": "797a9ab5a66c362d5178b22c585cd6af",
     "packages": [
         {
             "name": "doctrine/annotations",
-            "version": "v1.1.2",
+            "version": "v1.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "v1.1.2"
+                "reference": "f25c8aab83e0c3e976fd7d19875f198ccf2f7535"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/v1.1.2",
-                "reference": "v1.1.2",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/f25c8aab83e0c3e976fd7d19875f198ccf2f7535",
+                "reference": "f25c8aab83e0c3e976fd7d19875f198ccf2f7535",
                 "shasum": ""
             },
             "require": {
@@ -24,12 +25,13 @@
                 "php": ">=5.3.2"
             },
             "require-dev": {
-                "doctrine/cache": "1.*"
+                "doctrine/cache": "1.*",
+                "phpunit/phpunit": "4.*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
@@ -43,16 +45,6 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
@@ -61,10 +53,16 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Docblock Annotations Parser",
@@ -74,20 +72,23 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2013-06-16 21:33:03"
+            "support": {
+                "source": "https://github.com/doctrine/annotations/tree/master"
+            },
+            "time": "2015-08-31T12:32:49+00:00"
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.3.0",
+            "version": "v1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "e16d7adf45664a50fa86f515b6d5e7f670130449"
+                "reference": "47cdc76ceb95cc591d9c79a36dc3794975b5d136"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/e16d7adf45664a50fa86f515b6d5e7f670130449",
-                "reference": "e16d7adf45664a50fa86f515b6d5e7f670130449",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/47cdc76ceb95cc591d9c79a36dc3794975b5d136",
+                "reference": "47cdc76ceb95cc591d9c79a36dc3794975b5d136",
                 "shasum": ""
             },
             "require": {
@@ -98,17 +99,18 @@
             },
             "require-dev": {
                 "phpunit/phpunit": ">=3.7",
+                "predis/predis": "~1.0",
                 "satooshi/php-coveralls": "~0.6"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.5.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Cache\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -116,17 +118,6 @@
                 "MIT"
             ],
             "authors": [
-                {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/",
-                    "role": "Creator"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
                 {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
@@ -136,10 +127,16 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Caching library offering an object-oriented API for many cache backends",
@@ -148,29 +145,36 @@
                 "cache",
                 "caching"
             ],
-            "time": "2013-10-25 19:04:14"
+            "support": {
+                "issues": "https://github.com/doctrine/cache/issues",
+                "source": "https://github.com/doctrine/cache/tree/1.5.x"
+            },
+            "time": "2015-12-19T05:03:47+00:00"
         },
         {
             "name": "doctrine/collections",
-            "version": "v1.1",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "560f29c39cfcfbcd210e5d549d993a39d898b04b"
+                "reference": "6c1e4eef75f310ea1b3e30945e9f06e652128b8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/560f29c39cfcfbcd210e5d549d993a39d898b04b",
-                "reference": "560f29c39cfcfbcd210e5d549d993a39d898b04b",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/6c1e4eef75f310ea1b3e30945e9f06e652128b8a",
+                "reference": "6c1e4eef75f310ea1b3e30945e9f06e652128b8a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -184,16 +188,6 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
@@ -202,10 +196,16 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Collections Abstraction library",
@@ -215,20 +215,23 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2013-03-07 12:15:54"
+            "support": {
+                "source": "https://github.com/doctrine/collections/tree/v1.3.0"
+            },
+            "time": "2015-04-14T22:21:58+00:00"
         },
         {
             "name": "doctrine/common",
-            "version": "v2.4.1",
+            "version": "v2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/common.git",
-                "reference": "ceb18cf9b0230f3ea208b6238130fd415abda0a7"
+                "reference": "4824569127daa9784bf35219a1cd49306c795389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/common/zipball/ceb18cf9b0230f3ea208b6238130fd415abda0a7",
-                "reference": "ceb18cf9b0230f3ea208b6238130fd415abda0a7",
+                "url": "https://api.github.com/repos/doctrine/common/zipball/4824569127daa9784bf35219a1cd49306c795389",
+                "reference": "4824569127daa9784bf35219a1cd49306c795389",
                 "shasum": ""
             },
             "require": {
@@ -238,6 +241,9 @@
                 "doctrine/inflector": "1.*",
                 "doctrine/lexer": "1.*",
                 "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
             },
             "type": "library",
             "extra": {
@@ -256,16 +262,6 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
@@ -274,10 +270,16 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Common Library for Doctrine projects",
@@ -289,7 +291,11 @@
                 "persistence",
                 "spl"
             ],
-            "time": "2013-09-07 10:20:34"
+            "support": {
+                "issues": "https://github.com/doctrine/common/issues",
+                "source": "https://github.com/doctrine/common/tree/v2.4.3"
+            },
+            "time": "2015-08-31T14:38:45+00:00"
         },
         {
             "name": "doctrine/data-fixtures",
@@ -344,7 +350,7 @@
             "keywords": [
                 "database"
             ],
-            "time": "2013-07-10 17:04:07"
+            "time": "2013-07-10T17:04:07+00:00"
         },
         {
             "name": "doctrine/dbal",
@@ -410,7 +416,7 @@
                 "persistence",
                 "queryobject"
             ],
-            "time": "2014-01-01 16:43:57"
+            "time": "2014-01-01T16:43:57+00:00"
         },
         {
             "name": "doctrine/doctrine-bundle",
@@ -480,26 +486,34 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2013-03-25 20:13:59"
+            "time": "2013-03-25T20:13:59+00:00"
         },
         {
             "name": "doctrine/inflector",
-            "version": "v1.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "54b8333d2a5682afdc690060c1cf384ba9f47f08"
+                "reference": "0bcb2e79d8571787f18b7eb036ed3d004908e604"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/54b8333d2a5682afdc690060c1cf384ba9f47f08",
-                "reference": "54b8333d2a5682afdc690060c1cf384ba9f47f08",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/0bcb2e79d8571787f18b7eb036ed3d004908e604",
+                "reference": "0bcb2e79d8571787f18b7eb036ed3d004908e604",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
                     "Doctrine\\Common\\Inflector\\": "lib/"
@@ -511,16 +525,6 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan Wage",
-                    "email": "jonwage@gmail.com",
-                    "homepage": "http://www.jwage.com/"
-                },
-                {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
@@ -529,43 +533,60 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "https://github.com/schmittjoh",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
             "description": "Common String Manipulations with regard to casing and singular/plural rules.",
             "homepage": "http://www.doctrine-project.org",
             "keywords": [
                 "inflection",
-                "pluarlize",
-                "singuarlize",
+                "pluralize",
+                "singularize",
                 "string"
             ],
-            "time": "2013-01-10 21:49:15"
+            "support": {
+                "source": "https://github.com/doctrine/inflector/tree/master"
+            },
+            "time": "2014-12-20T21:24:13+00:00"
         },
         {
             "name": "doctrine/lexer",
-            "version": "v1.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "2f708a85bb3aab5d99dab8be435abd73e0b18acb"
+                "reference": "1febd6c3ef84253d7c815bed85fc622ad207a9f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/2f708a85bb3aab5d99dab8be435abd73e0b18acb",
-                "reference": "2f708a85bb3aab5d99dab8be435abd73e0b18acb",
+                "url": "https://api.github.com/repos/doctrine/lexer/zipball/1febd6c3ef84253d7c815bed85fc622ad207a9f8",
+                "reference": "1febd6c3ef84253d7c815bed85fc622ad207a9f8",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
+            "require-dev": {
+                "phpunit/phpunit": "^4.5"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Doctrine\\Common\\Lexer\\": "lib/"
+                "psr-4": {
+                    "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -574,28 +595,32 @@
             ],
             "authors": [
                 {
-                    "name": "Guilherme Blanco",
-                    "email": "guilhermeblanco@gmail.com",
-                    "homepage": "http://www.instaclick.com"
-                },
-                {
                     "name": "Roman Borschel",
                     "email": "roman@code-factory.org"
                 },
                 {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
                     "name": "Johannes Schmitt",
-                    "email": "schmittjoh@gmail.com",
-                    "homepage": "http://jmsyst.com",
-                    "role": "Developer of wrapped JMSSerializerBundle"
+                    "email": "schmittjoh@gmail.com"
                 }
             ],
-            "description": "Base library for a lexer that can be used in Top-Down, Recursive Descent Parsers.",
-            "homepage": "http://www.doctrine-project.org",
+            "description": "PHP Doctrine Lexer parser library that can be used in Top-Down, Recursive Descent Parsers.",
+            "homepage": "https://www.doctrine-project.org/projects/lexer.html",
             "keywords": [
+                "annotations",
+                "docblock",
                 "lexer",
-                "parser"
+                "parser",
+                "php"
             ],
-            "time": "2013-01-12 18:59:04"
+            "support": {
+                "issues": "https://github.com/doctrine/lexer/issues",
+                "source": "https://github.com/doctrine/lexer/tree/1.0.2"
+            },
+            "time": "2019-06-08T11:03:04+00:00"
         },
         {
             "name": "doctrine/phpcr-bundle",
@@ -664,7 +689,7 @@
                 "persistence",
                 "phpcr"
             ],
-            "time": "2013-10-10 21:04:03"
+            "time": "2013-10-10T21:04:03+00:00"
         },
         {
             "name": "doctrine/phpcr-odm",
@@ -737,7 +762,7 @@
                 "odm",
                 "phpcr"
             ],
-            "time": "2013-12-04 16:07:15"
+            "time": "2013-12-04T16:07:15+00:00"
         },
         {
             "name": "friendsofsymfony/rest-bundle",
@@ -814,7 +839,7 @@
             "keywords": [
                 "rest"
             ],
-            "time": "2014-01-06 08:07:25"
+            "time": "2014-01-06T08:07:25+00:00"
         },
         {
             "name": "imagine/imagine",
@@ -866,7 +891,7 @@
                 "image manipulation",
                 "image processing"
             ],
-            "time": "2013-07-10 17:25:36"
+            "time": "2013-07-10T17:25:36+00:00"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -918,7 +943,7 @@
             "keywords": [
                 "parameters management"
             ],
-            "time": "2013-12-07 10:10:39"
+            "time": "2013-12-07T10:10:39+00:00"
         },
         {
             "name": "jackalope/jackalope",
@@ -971,7 +996,7 @@
             "keywords": [
                 "phpcr"
             ],
-            "time": "2013-11-06 10:28:46"
+            "time": "2013-11-06T10:28:46+00:00"
         },
         {
             "name": "jackalope/jackalope-doctrine-dbal",
@@ -1032,7 +1057,7 @@
                 "phpcr",
                 "transport implementation"
             ],
-            "time": "2013-10-10 20:12:56"
+            "time": "2013-10-10T20:12:56+00:00"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -1082,7 +1107,7 @@
                 "highlight",
                 "sql"
             ],
-            "time": "2014-01-12 16:20:24"
+            "time": "2014-01-12T16:20:24+00:00"
         },
         {
             "name": "jms/metadata",
@@ -1134,7 +1159,7 @@
                 "xml",
                 "yaml"
             ],
-            "time": "2013-11-05 23:02:36"
+            "time": "2013-11-05T23:02:36+00:00"
         },
         {
             "name": "jms/parser-lib",
@@ -1169,7 +1194,7 @@
                 "Apache2"
             ],
             "description": "A library for easily creating recursive-descent parsers.",
-            "time": "2012-11-18 18:08:43"
+            "time": "2012-11-18T18:08:43+00:00"
         },
         {
             "name": "jms/serializer",
@@ -1239,7 +1264,7 @@
                 "serialization",
                 "xml"
             ],
-            "time": "2013-12-04 16:46:05"
+            "time": "2013-12-04T16:46:05+00:00"
         },
         {
             "name": "jms/serializer-bundle",
@@ -1309,7 +1334,7 @@
                 "serialization",
                 "xml"
             ],
-            "time": "2013-12-05 14:36:11"
+            "time": "2013-12-05T14:36:11+00:00"
         },
         {
             "name": "knplabs/knp-menu",
@@ -1373,7 +1398,7 @@
                 "menu",
                 "tree"
             ],
-            "time": "2012-06-10 16:20:40"
+            "time": "2012-06-10T16:20:40+00:00"
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -1422,7 +1447,7 @@
             "keywords": [
                 "menu"
             ],
-            "time": "2013-05-25 10:20:03"
+            "time": "2013-05-25T10:20:03+00:00"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -1493,7 +1518,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-07-19 00:03:27"
+            "time": "2013-07-19T00:03:27+00:00"
         },
         {
             "name": "liip/doctrine-cache-bundle",
@@ -1541,7 +1566,7 @@
                 "Symfony2",
                 "cache"
             ],
-            "time": "2013-08-08 14:44:34"
+            "time": "2013-08-08T14:44:34+00:00"
         },
         {
             "name": "liip/imagine-bundle",
@@ -1596,7 +1621,7 @@
                 "image",
                 "imagine"
             ],
-            "time": "2013-12-04 09:43:45"
+            "time": "2013-12-04T09:43:45+00:00"
         },
         {
             "name": "lunetics/locale-bundle",
@@ -1664,7 +1689,7 @@
                 "multilanguage",
                 "router"
             ],
-            "time": "2013-09-13 09:35:29"
+            "time": "2013-09-13T09:35:29+00:00"
         },
         {
             "name": "midgard/createphp",
@@ -1710,7 +1735,7 @@
             "keywords": [
                 "rdfa"
             ],
-            "time": "2013-10-03 15:31:10"
+            "time": "2013-10-03T15:31:10+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1777,7 +1802,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-11-14 19:48:31"
+            "time": "2013-11-14T19:48:31+00:00"
         },
         {
             "name": "phpcollection/phpcollection",
@@ -1827,7 +1852,7 @@
                 "sequence",
                 "set"
             ],
-            "time": "2013-01-23 15:16:14"
+            "time": "2013-01-23T15:16:14+00:00"
         },
         {
             "name": "phpcr/phpcr",
@@ -1882,7 +1907,7 @@
                 "contentrepository",
                 "phpcr"
             ],
-            "time": "2013-10-07 15:34:44"
+            "time": "2013-10-07T15:34:44+00:00"
         },
         {
             "name": "phpcr/phpcr-utils",
@@ -1945,7 +1970,7 @@
                 "contentrepository",
                 "phpcr"
             ],
-            "time": "2013-10-10 19:46:30"
+            "time": "2013-10-10T19:46:30+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -1994,7 +2019,7 @@
                 "php",
                 "type"
             ],
-            "time": "2013-05-19 11:09:35"
+            "time": "2013-05-19T11:09:35+00:00"
         },
         {
             "name": "psr/log",
@@ -2032,7 +2057,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2012-12-21T11:40:51+00:00"
         },
         {
             "name": "sensio/distribution-bundle",
@@ -2078,7 +2103,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2013-08-22 05:04:53"
+            "time": "2013-08-22T05:04:53+00:00"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -2142,7 +2167,7 @@
                 "block",
                 "sonata"
             ],
-            "time": "2013-12-13 13:27:55"
+            "time": "2013-12-13T13:27:55+00:00"
         },
         {
             "name": "sonata-project/core-bundle",
@@ -2200,7 +2225,7 @@
             "keywords": [
                 "sonata"
             ],
-            "time": "2014-01-07 11:35:59"
+            "time": "2014-01-07T11:35:59+00:00"
         },
         {
             "name": "symfony-cmf/block-bundle",
@@ -2265,7 +2290,7 @@
                 "block",
                 "content fragments"
             ],
-            "time": "2013-10-14 15:32:36"
+            "time": "2013-10-14T15:32:36+00:00"
         },
         {
             "name": "symfony-cmf/content-bundle",
@@ -2330,7 +2355,7 @@
             "keywords": [
                 "Symfony CMF"
             ],
-            "time": "2013-10-14 15:32:15"
+            "time": "2013-10-14T15:32:15+00:00"
         },
         {
             "name": "symfony-cmf/core-bundle",
@@ -2391,7 +2416,7 @@
             "keywords": [
                 "Symfony CMF"
             ],
-            "time": "2014-01-09 17:18:30"
+            "time": "2014-01-09T17:18:30+00:00"
         },
         {
             "name": "symfony-cmf/create-bundle",
@@ -2445,7 +2470,7 @@
                 }
             ],
             "description": "Symfony Bundle for createphp and create.js. The easiest way to make any site editable and have semantic annotations with RDFa.",
-            "time": "2014-01-13 09:54:14"
+            "time": "2014-01-13T09:54:14+00:00"
         },
         {
             "name": "symfony-cmf/media-bundle",
@@ -2508,7 +2533,7 @@
                 "image",
                 "media"
             ],
-            "time": "2013-12-26 17:42:18"
+            "time": "2013-12-26T17:42:18+00:00"
         },
         {
             "name": "symfony-cmf/menu-bundle",
@@ -2569,7 +2594,7 @@
                 "Symfony CMF",
                 "menu"
             ],
-            "time": "2013-10-14 15:31:59"
+            "time": "2013-10-14T15:31:59+00:00"
         },
         {
             "name": "symfony-cmf/routing",
@@ -2627,7 +2652,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2013-10-14 15:32:46"
+            "time": "2013-10-14T15:32:46+00:00"
         },
         {
             "name": "symfony-cmf/routing-bundle",
@@ -2693,7 +2718,7 @@
                 "database",
                 "routing"
             ],
-            "time": "2013-12-16 16:46:20"
+            "time": "2013-12-16T16:46:20+00:00"
         },
         {
             "name": "symfony-cmf/simple-cms-bundle",
@@ -2757,7 +2782,7 @@
                 "Symfony CMF",
                 "cms"
             ],
-            "time": "2013-12-06 12:08:52"
+            "time": "2013-12-06T12:08:52+00:00"
         },
         {
             "name": "symfony-cmf/symfony-cmf",
@@ -2817,7 +2842,7 @@
             ],
             "description": "Symfony Content Management Framework",
             "homepage": "http://cmf.symfony.com",
-            "time": "2013-10-14 15:35:09"
+            "time": "2013-10-14T15:35:09+00:00"
         },
         {
             "name": "symfony/assetic-bundle",
@@ -2880,7 +2905,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-05-16 05:32:23"
+            "time": "2013-05-16T05:32:23+00:00"
         },
         {
             "name": "symfony/icu",
@@ -2928,7 +2953,7 @@
                 "icu",
                 "intl"
             ],
-            "time": "2013-06-03 18:32:58"
+            "time": "2013-06-03T18:32:58+00:00"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -2986,7 +3011,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2013-05-27 18:06:55"
+            "time": "2013-05-27T18:06:55+00:00"
         },
         {
             "name": "symfony/symfony",
@@ -3094,7 +3119,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-01-05 01:24:54"
+            "time": "2014-01-05T01:24:54+00:00"
         },
         {
             "name": "twig/extensions",
@@ -3141,7 +3166,7 @@
                 "i18n",
                 "text"
             ],
-            "time": "2013-10-18 19:37:15"
+            "time": "2013-10-18T19:37:15+00:00"
         },
         {
             "name": "twig/twig",
@@ -3190,7 +3215,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-12-06 07:47:10"
+            "time": "2013-12-06T07:47:10+00:00"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -3230,7 +3255,7 @@
                 }
             ],
             "description": "JSONP callback validator.",
-            "time": "2013-10-21 12:01:32"
+            "time": "2013-10-21T12:01:32+00:00"
         },
         {
             "name": "willdurand/negotiation",
@@ -3280,7 +3305,7 @@
                 "header",
                 "negotiation"
             ],
-            "time": "2014-01-09 22:50:05"
+            "time": "2014-01-09T22:50:05+00:00"
         },
         {
             "name": "wjzijderveld/check-bundles",
@@ -3332,7 +3357,7 @@
                 "script",
                 "symfony"
             ],
-            "time": "2013-10-08 13:03:59"
+            "time": "2013-10-08T13:03:59+00:00"
         }
     ],
     "packages-dev": [
@@ -3391,20 +3416,19 @@
             "keywords": [
                 "Symfony2"
             ],
-            "time": "2013-10-08 12:57:10"
+            "time": "2013-10-08T12:57:10+00:00"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "wjzijderveld/check-bundles": 20
     },
+    "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
 }
